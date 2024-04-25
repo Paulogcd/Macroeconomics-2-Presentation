@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1714067401 "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Equations_description.tex" "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Equations_description.pdf" "Equations_description" 1714067405
-  "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Equations_description.aux" 1714067404 1711 3c5b5b831f1ba6201db1196af219bc0e ""
-  "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Equations_description.tex" 1714067400 19299 98b1aa6b522105cc4bb8a23117e0c79d ""
+["pdflatex"] 1714069709 "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Equations_description.tex" "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Equations_description.pdf" "Equations_description" 1714069711
+  "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Equations_description.aux" 1714069711 1571 8005b14310f678bbdfeecc8ae72114b2 ""
+  "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Equations_description.tex" 1714069708 23201 eeee871c114d404540603e22030df526 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -121,15 +121,15 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1632435985 2724742 d4c7191149db17f17f7af666ce47b818 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "Equations_description.aux" 1714067404 1711 3c5b5b831f1ba6201db1196af219bc0e "pdflatex"
-  "Equations_description.out" 1714067404 1445 ab3ca6f4d3201a54b8bd7f67dcd2d996 "pdflatex"
-  "Equations_description.tex" 1714067400 19299 98b1aa6b522105cc4bb8a23117e0c79d ""
-  "Equations_description.toc" 1714067404 696 ad3d135bbc8c61a981b1626d2611f36e "pdflatex"
+  "Equations_description.aux" 1714069711 1571 8005b14310f678bbdfeecc8ae72114b2 "pdflatex"
+  "Equations_description.out" 1714069711 1216 11ed205eb18ce037b3869acb77abbae8 "pdflatex"
+  "Equations_description.tex" 1714069708 23201 eeee871c114d404540603e22030df526 ""
+  "Equations_description.toc" 1714069711 597 45785c9715744b705eafab521a911114 "pdflatex"
   (generated)
   "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Equations_description.log"
-  "Equations_description.out"
   "Equations_description.log"
-  "Equations_description.aux"
   "Equations_description.pdf"
-  "Equations_description.toc"
   "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Equations_description.pdf"
+  "Equations_description.out"
+  "Equations_description.aux"
+  "Equations_description.toc"
