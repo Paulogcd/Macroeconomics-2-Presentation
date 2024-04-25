@@ -1,0 +1,179 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=latex 2021.9.24)  25 APR 2024 20:09
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**beamerthememetropolis.ins
+(/Users/pgcd/Downloads/mtheme-master/source/beamerthememetropolis.ins
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/docstrip.tex
+\blockLevel=\count179
+\emptyLines=\count180
+\processedLines=\count181
+\commentsRemoved=\count182
+\commentsPassed=\count183
+\codeLinesPassed=\count184
+\TotalprocessedLines=\count185
+\TotalcommentsRemoved=\count186
+\TotalcommentsPassed=\count187
+\TotalcodeLinesPassed=\count188
+\NumberOfFiles=\count189
+\inFile=\read2
+\inputcheck=\read3
+\off@0=\count190
+\off@1=\count191
+\off@2=\count192
+\off@3=\count193
+\off@4=\count194
+\off@5=\count195
+\off@6=\count196
+\off@7=\count197
+\off@8=\count198
+\off@9=\count199
+\off@10=\count266
+\off@11=\count267
+\off@12=\count268
+\off@13=\count269
+\off@14=\count270
+\off@15=\count271
+\@maxfiles=\count272
+\@maxoutfiles=\count273
+
+Utility: `docstrip' v2.6a <2020-07-07>
+English documentation    <2020-07-11>
+
+**********************************************************
+* This program converts documented macro-files into fast *
+* loadable files by stripping off (nearly) all comments! *
+**********************************************************
+
+********************************************************
+* No Configuration file found, using default settings. *
+********************************************************
+
+)
+
+Generating file(s) ./beamerthememetropolis.sty 
+\openout0 = `./beamerthememetropolis.sty'.
+
+
+Processing file beamerthememetropolis.dtx (package) -> beamerthememetropolis.st
+y
+File beamerthememetropolis.dtx ended by \endinput.
+Lines  processed: 211
+Comments removed: 121
+Comments  passed: 0
+Codelines passed: 86
+
+
+Generating file(s) ./beamerinnerthememetropolis.sty 
+\openout0 = `./beamerinnerthememetropolis.sty'.
+
+
+Processing file beamerinnerthememetropolis.dtx (package) -> beamerinnerthememet
+ropolis.sty
+File beamerinnerthememetropolis.dtx ended by \endinput.
+Lines  processed: 606
+Comments removed: 326
+Comments  passed: 0
+Codelines passed: 276
+
+
+Generating file(s) ./beamerouterthememetropolis.sty 
+\openout0 = `./beamerouterthememetropolis.sty'.
+
+
+Processing file beamerouterthememetropolis.dtx (package) -> beamerouterthememet
+ropolis.sty
+File beamerouterthememetropolis.dtx ended by \endinput.
+Lines  processed: 237
+Comments removed: 117
+Comments  passed: 0
+Codelines passed: 116
+
+
+Generating file(s) ./beamerfontthememetropolis.sty 
+\openout0 = `./beamerfontthememetropolis.sty'.
+
+
+Processing file beamerfontthememetropolis.dtx (package) -> beamerfontthememetro
+polis.sty
+File beamerfontthememetropolis.dtx ended by \endinput.
+Lines  processed: 449
+Comments removed: 141
+Comments  passed: 0
+Codelines passed: 304
+
+
+Generating file(s) ./beamercolorthememetropolis.sty 
+\openout0 = `./beamercolorthememetropolis.sty'.
+
+
+Processing file beamercolorthememetropolis.dtx (package) -> beamercolorthememet
+ropolis.sty
+File beamercolorthememetropolis.dtx ended by \endinput.
+Lines  processed: 251
+Comments removed: 130
+Comments  passed: 0
+Codelines passed: 117
+
+
+Generating file(s) ./beamercolorthememetropolis-highcontrast.sty 
+\openout0 = `./beamercolorthememetropolis-highcontrast.sty'.
+
+
+Processing file beamercolorthememetropolis-highcontrast.dtx (package) -> beamer
+colorthememetropolis-highcontrast.sty
+File beamercolorthememetropolis-highcontrast.dtx ended by \endinput.
+Lines  processed: 47
+Comments removed: 25
+Comments  passed: 0
+Codelines passed: 18
+
+
+Generating file(s) ./pgfplotsthemetol.sty 
+\openout0 = `./pgfplotsthemetol.sty'.
+
+
+Processing file pgfplotsthemetol.dtx (package) -> pgfplotsthemetol.sty
+File pgfplotsthemetol.dtx ended by \endinput.
+Lines  processed: 189
+Comments removed: 77
+Comments  passed: 0
+Codelines passed: 102
+
+**************************************************************
+*                                                            *
+* To finish the installation you have to move the following  *
+* files into a directory searched by TeX:                    *
+*                                                            *
+*     beamerthememetropolis.sty                              *
+*     beamerinnerthememetropolis.sty                         *
+*     beamerouterthememetropolis.sty                         *
+*     beamerfontthememetropolis.sty                          *
+*     beamercolorthememetropolis.sty                         *
+*     pgfplotsthemetol.sty                                   *
+*                                                            *
+* To produce the documentation run the file mtheme.dtx       *
+* through LaTeX.                                             *
+*                                                            *
+* Happy TeXing!                                              *
+*                                                            *
+**************************************************************
+Overall statistics:
+Files  processed: 7
+Lines  processed: 1990
+Comments removed: 937
+Comments  passed: 0
+Codelines passed: 1019
+ ) 
+Here is how much of TeX's memory you used:
+ 393 strings out of 478995
+ 5887 string characters out of 5858210
+ 291835 words of memory out of 5000000
+ 17965 multiletter control sequences out of 15000+600000
+ 403430 words of font info for 27 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 13i,0n,15p,151b,114s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+No pages of output.
