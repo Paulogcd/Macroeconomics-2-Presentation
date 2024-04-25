@@ -9,5 +9,5 @@ Here are some useful resources :
 
 - The slides of our presentation 
 - [The final version of the paper presented](https://www.aeaweb.org/articles?id=10.1257/aer.20162005)
-- [An additional description of the equations of the paper](./Equations_description/Equations_description.pdf)
+- [An additional description of the equations of the paper](./Resources/Equations_description/Equations_description.pdf)
 - [The online appendix of the paper](https://www.aeaweb.org/content/file?id=12652)
