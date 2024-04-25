@@ -1,6 +1,5 @@
 ---
-title: |
-    | Paper review : \"A Behavioral New Keynesian Model\" of Xavier Gabaix, 2020"
+title: "Paper review : \"A Behavioral New Keynesian Model\" of Xavier Gabaix, 2020"
 ---
 
 Hello, we are Nayanika, Paulo and Shang, and this is the website of our Macroeconomics 2 presentation, dedicated to the review of the paper Gabaix, Xavier. 2020. "A Behavioral New Keynesian Model." American Economic Review, 110 (8): 2271-2327. 
@@ -8,7 +7,8 @@ Hello, we are Nayanika, Paulo and Shang, and this is the website of our Macroeco
 
 Here are some useful resources : 
 
-- [The slides of our presentation](./Resources/Slides/Slides.pdf) ([Here the code](https://github.com/Paulogcd/Macroeconomics-2-Presentation/blob/main/Resources/Slides/Slides.tex))
-- [The final version of the paper presented](https://www.aeaweb.org/articles?id=10.1257/aer.20162005)
-- [An additional description of the equations of the paper](./Resources/Equations_description/Equations_description.pdf) ([Here the LaTeX file](./Resources/Equations_description/Equations_description.tex)
-- [The online appendix of the paper](https://www.aeaweb.org/content/file?id=12652) (Although its date is February 21, 2020, it is referenced in the page of the article's latest version.)
+- [The slides of our presentation](./Resources/Slides/Slides.pdf) ([Here the LaTeX file](./Resources/Slides/Slides.tex))
+- [An additional description of the equations of the paper](./Resources/Equations_description/Equations_description.pdf) ([Here the LaTeX file](./Resources/Equations_description/Equations_description.tex))
+
+- [The final version of the paper](https://www.aeaweb.org/articles?id=10.1257/aer.20162005)
+- [The online appendix of the paper](https://www.aeaweb.org/content/file?id=12652)
