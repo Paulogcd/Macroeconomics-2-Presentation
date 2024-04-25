@@ -1,8 +1,9 @@
 ---
-title: "Macroeconomics 2 presentation \\ A review of \"A Behavioral New Keynesian Model\" of Xavier Gabaix"
+title: |
+    | Paper review : \"A Behavioral New Keynesian Model\" of Xavier Gabaix, 2020"
 ---
 
-Hello, we are Nayanika, Paulo and Shang, and this is the website of our Macroeconomics presentation, dedicated to the paper  Gabaix, Xavier. 2020. "A Behavioral New Keynesian Model." American Economic Review, 110 (8): 2271-2327. 
+Hello, we are Nayanika, Paulo and Shang, and this is the website of our Macroeconomics 2 presentation, dedicated to the review of the paper Gabaix, Xavier. 2020. "A Behavioral New Keynesian Model." American Economic Review, 110 (8): 2271-2327. 
 
 
 Here are some useful resources : 
