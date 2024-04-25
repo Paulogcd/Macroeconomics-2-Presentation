@@ -1,0 +1,18 @@
+\beamer@sectionintoc {1}{Contextualization}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Goal of the paper}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Literature of the topic}{4}{0}{1}
+\beamer@sectionintoc {2}{Baseline model of the paper}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Household's Problem}{5}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{1}{Objective function}{5}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{2}{Constraint}{6}{0}{2}
+\beamer@subsubsectionintoc {2}{1}{3}{Rest...}{7}{0}{2}
+\beamer@subsectionintoc {2}{2}{Firms}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{Solution}{7}{0}{2}
+\beamer@subsectionintoc {2}{4}{Synthesis Of A Behavioral New Keynesian Model}{7}{0}{2}
+\beamer@subsectionintoc {2}{5}{Calibration}{7}{0}{2}
+\beamer@sectionintoc {3}{Consequences}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{On monetary policy}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{On fiscal policy}{8}{0}{3}
+\beamer@sectionintoc {4}{Conclusion of the Baseline Model}{8}{0}{4}
+\beamer@sectionintoc {5}{Further Behavioral Extension}{9}{0}{5}
+\beamer@sectionintoc {6}{Limits and critics}{10}{0}{6}
