@@ -1,11 +1,19 @@
 \documentclass{beamer}
 \usetheme{metropolis}
 
+\usefonttheme{serif} % default family is serif
+
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+
 \title{Macroeconomics 2 Presentation}
 \subtitle{Article review :\\ Gabaix, Xavier. 2020. "A Behavioral New Keynesian Model." American Economic Review, 110(8): 2271-2327}
 \author{GUGELMO CAVALHEIRO DIAS Paulo \\ \and MITASH Nayanika \\ \and WANG Shang}
 \institute{Sciences Po}
 \date{\today}
+
+
+\newcommand\ReduceFont{\fontsize{10}{7.2}\selectfont}
 
 \begin{document}
 
@@ -14,27 +22,40 @@
 \end{frame}
 
 \begin{frame}
+    \ReduceFont
     \frametitle{Outline}
     \tableofcontents[hideallsubsections]
 \end{frame}
 
 \section{Contextualization}
 \begin{frame}
-    \tableofcontents[currentsection, hideallsubsections]
+    \tableofcontents[currentsection, hideothersubsections, sections=\value{section}]
 \end{frame}
 
 \subsection{Goal of the paper}
+\begin{frame}{\subsecname}
+    Content of the Goal of the paper.
+\end{frame}
+
 \subsection{Literature of the topic}
+\begin{frame}
+    Content of the the Literature.
+\end{frame}
 
 \section{Baseline model of the paper}
 \begin{frame}
-    \tableofcontents[currentsection, hideothersubsections]
+    \ReduceFont
+    \tableofcontents[currentsection, hideallsubsections]
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[currentsection, hideothersubsections, sections=\value{section}]
 \end{frame}
 
 \subsection{Household's Problem}
 
 \subsubsection{Objective function}
-\begin{frame}{Utility function}
+\begin{frame}{\subsecname}
     \begin{equation}
         \label{3}
         U = \mathbb{E}\left[\sum_{t=0}^{\infty}\beta^{t}u(c_t,N_t)\right]
@@ -50,7 +71,7 @@
 \end{frame}
 
 \subsubsection{Constraint}
-\begin{frame}{Real financial wealth}
+\begin{frame}{\subsecname}
     \begin{equation}
         \label{4}
         k_{t+1}=(1+r_t)(k_t-c_t+y_t)
@@ -68,28 +89,113 @@
 \subsection{Calibration}
 
 \section{Consequences}
-
 \begin{frame}
-    \tableofcontents[currentsection, hideothersubsections]
-\end{frame}
-
-\subsection{On monetary policy}
-\subsection{On fiscal policy}
-
-\section{Conclusion of the Baseline Model}
-\begin{frame}
-    \tableofcontents[currentsection, hideothersubsections]
-\end{frame}
-
-
-\section{Further Behavioral Extension}
-\begin{frame}
+    \ReduceFont
     \tableofcontents[currentsection, hideallsubsections]
 \end{frame}
 
-\section{Limits and critics}
 \begin{frame}
+    \tableofcontents[currentsection, hideothersubsections, sections=\value{section}]
+\end{frame}
+
+\section{Implications for monetary policy}
+\begin{frame}
+    \ReduceFont
     \tableofcontents[currentsection, hideallsubsections]
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[currentsection, hideothersubsections, sections=\value{section}]
+\end{frame}
+
+\section{Implications for fiscal policy}
+\begin{frame}
+    \ReduceFont
+    \tableofcontents[currentsection, hideallsubsections]
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[currentsection, hideothersubsections, sections=\value{section}]
+\end{frame}
+
+\section{Behavioral Enrichments of the Model}
+\begin{frame}
+    \ReduceFont
+    \tableofcontents[currentsection, hideallsubsections]
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[currentsection, hideothersubsections, sections=\value{section}]
+\end{frame}
+
+\subsection{Term Structure of Consumer Attention}
+\begin{frame}{\subsecname}
+    \begin{equation} \tag{49}
+        \begin{split}
+            k_{t+1}= &\  \textbf{G}^{k,BR}(c_{t},N_{t},k_{t},\textbf{X}_{t}) \\
+            & := (1+\bar{r}+\hat{r}^{BR}(\textbf{X}_t))(k_{t}+\bar{y}+\hat{y}^{BR}(N_{t},\textbf{X}_t)-c_{t})
+        \end{split}
+    \end{equation}
+    \begin{equation}\tag{50}
+        \begin{cases}
+            \hat{r}^{BR} = m_{r} \hat{r}(\textbf{X}_{t}) \\
+            \hat{y}^{BR}(N_{t},\textbf{X}_{t}) = m_{y}\hat{y}(\textbf{X}_{t})+\omega(\textbf{X}_{t})(N_{t}-N_{t}\textbf{X}_{t})
+        \end{cases}
+    \end{equation}
+    \begin{equation}\tag{51}
+        \begin{cases}
+            \mathbb{E}_{t}^{BR}\left[\hat{r}^{BR}(\textbf{X}_{t+k})\right]=m_{r}\bar{m}^{k}\mathbb{E}_{t}\left[\hat{r}(\textbf{X}_{t+k})\right] \\
+            \mathbb{E}_{t}^{BR}\left[\hat{y}^{BR}(\textbf{X}_{t+k})\right]=m_{r}\bar{m}^{k}\mathbb{E}_{t}\left[\hat{y}(\textbf{X}_{t+k})\right]
+        \end{cases}
+    \end{equation}
+\end{frame}
+
+\subsection{Flattening of the Phillips Curve via Imperfect Firm Attention}
+\begin{frame}
+\end{frame}
+
+\subsection{Nonconstant Trend Inflation and Neo- Fisherian Paradoxes}
+\begin{frame}
+\end{frame}
+
+\section{Discussion of the Behavioral Assumptions}
+\begin{frame}
+    \ReduceFont
+    \tableofcontents[currentsection, hideallsubsections]
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[currentsection, hideothersubsections, sections=\value{section}]
+\end{frame}
+
+\begin{frame}
+    \begin{itemize}
+        \item Theoretical Microfoundation
+        \item Lucas Critique
+        \item Long-Run Learning
+        \item Parsimony and New Degrees of Freedom
+        \item Reasonable Variants
+    \end{itemize}
+\end{frame}
+
+\section{Conclusion}
+\begin{frame}
+    \ReduceFont
+    \tableofcontents[currentsection, hideallsubsections]
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[currentsection, hideothersubsections, sections=\value{section}]
+\end{frame}
+
+\section{Limits and Critics}
+\begin{frame}
+    \ReduceFont
+    \tableofcontents[currentsection, hideallsubsections]
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[currentsection, hideothersubsections, sections=\value{section}]
 \end{frame}
 
 

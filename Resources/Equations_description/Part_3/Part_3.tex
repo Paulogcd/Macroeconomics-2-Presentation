@@ -1,5 +1,12 @@
 \documentclass{article}
 \usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{csquotes}
+
+\DeclareSymbolFont{matha}{OML}{txmi}{m}{it}% txfonts
+\DeclareMathSymbol{\varv}{\mathord}{matha}{118}
 
 \title{Macroeconomics 2 Presentation \\ Part III equations}
 \author{Gugelmo Cavalheiro Dias Paulo \\ \and Mitash Nayanika \\ \and Wang Shang}
@@ -9,9 +16,15 @@
 
 \maketitle
 
+\section{Behavioral Enrichments to the Model}
+
+\subsection{Term Structure of Consumer Attention}
+
+\subsubsection{Equation 49}
+
 \begin{equation} \tag{49}
     \begin{split}
-        k_{t+1}= &\  \textbf{G}^{k,BR}(c_{t},N_{t},k_{t}) \\
+        k_{t+1}= &\  \textbf{G}^{k,BR}(c_{t},N_{t},k_{t},\textbf{X}_{t}) \\
         & := (1+\bar{r}+\hat{r}^{BR}(\textbf{X}_t))(k_{t}+\bar{y}+\hat{y}^{BR}(N_{t},\textbf{X}_t)-c_{t})
     \end{split}
 \end{equation}
@@ -30,25 +43,114 @@ With :
     \item $\textbf{X}_{t}$ the ... ?  
 \end{itemize}
 
-\begin{equation} \tag{49}
+
+\subsubsection*{Equation 50}
+
+\begin{equation}\tag{50}
     \begin{cases}
-        \hat{r}^{BR}(\textbf{X}_{t})=m_{r}\hat{r}(\textbf{X}_t) \\
-        \hat{y}^{BR}(N_{t},\textbf{X}_{t})=m_y\hat{y}(\textbf{X}_{t})
+        \hat{r}^{BR} = m_{r} \hat{r}(\textbf{X}_{t}) \\
+        \hat{y}^{BR}(N_{t},\textbf{X}_{t}) = m_{y}\hat{y}(\textbf{X}_{t})+\omega(\textbf{X}_{t})(N_{t}-N_{t}\textbf{X}_{t})
     \end{cases}
 \end{equation}
-With : 
+
+\subsubsection*{Equation 51, Lemma 5 (Term Structure of Attention)}
+
+\begin{equation}\tag{51}
+    \begin{cases}
+        \mathbb{E}_{t}^{BR}\left[\hat{r}^{BR}(\textbf{X}_{t+k})\right]=m_{r}\bar{m}^{k}\mathbb{E}_{t}\left[\hat{r}(\textbf{X}_{t+k})\right] \\
+        \mathbb{E}_{t}^{BR}\left[\hat{y}^{BR}(\textbf{X}_{t+k})\right]=m_{r}\bar{m}^{k}\mathbb{E}_{t}\left[\hat{y}(\textbf{X}_{t+k})\right]
+    \end{cases}
+\end{equation}
+
+\subsubsection*{Equation 52}
+
+\begin{equation}\tag{52}
+        \hat{c}_{t}=\mathbb{E}_{t}\left[\sum_{\tau\geq t}\frac{\bar{m}^{\tau-t}}{R^{\tau-t}}\left(b_{r}m_{r}\hat{r}(\textbf{X}_{\tau})+m_{Y}\frac{\bar{r}}{R}\hat{y}(\textbf{X}_{\tau})\right)\right]
+\end{equation}
+
+Where : 
 \begin{itemize}
-    \item $k_{t+1}$ the capital at time $t+1$
-    \item $\textbf{G}^{k,BR}$ the ... ?
-    \item $c_t$ the consumption at time $t$
-    \item $N_{t}$ work at time $t$
-    \item $k_t$ capital at time $t$
-    \item $\bar{r}$ the ... ?
-    \item $\hat{r}^{BR}$ the ... ?
-    \item $\textbf{X}_t$ the ... ?
-    \item $\bar{y}$ the ... ?
-    \item $\hat{y}^{BR}(N_t,\textbf{X}_{t})$ the ... ?
-    \item $\textbf{X}_{t}$ the ... ?  
+    \item $\hat{c}_{t}$ is the value of the deviation from the steady state of consumption
+    \item $\tau$ ...
 \end{itemize}
+
+\subsubsection*{Equation 53}
+
+\begin{equation}\tag{53}
+    \frac{\Delta^{GE}}{\Delta^{\text{direct}}}=R^{\tau+1}
+\end{equation}
+    
+
+\subsubsection*{Equation 54}
+
+\begin{equation}\tag{54}
+    \frac{\Delta^{GE}}{\Delta^{\text{direct}}}=\left(\frac{R}{R-rm_{Y}}\right)^{\tau+1}\in\left[1, R^{\tau+1}\right]
+\end{equation}
+
+\subsection{Flattening of the Phillips Curve via Imperfect Firm Attention}
+
+\subsubsection*{Equation 55}
+
+\begin{equation}\tag{55}
+    \varv^{BR}(q_{it},(\textbf{X}_{\tau})):=\varv^{0}\left(q_{it}-m^{f}_{\pi}\Pi(\textbf{X}_{\tau}),m^{f}_{x}\mu(\textbf{X}_{\tau}),c(\textbf{X}_{\tau})\right)
+\end{equation}
+
+\subsubsection*{Equation 56}
+
+\begin{equation}\tag{56}
+    \max_{q_{it}}{\mathbb{E}_{t}^{BR}\left[\sum_{\tau=t}^{\infty}\left(\beta\theta\right)^{\tau-t}\frac{c(\textbf{X}_{\tau})^{-\gamma}}{c(\textbf{X}_{\tau})^{-\gamma}}\varv^{BR}(q_{it},\textbf{X}_{\tau})\right]}
+\end{equation}
+
+\subsubsection*{Equation 57}
+
+\begin{equation}\tag{57}
+    p^{*}_{t}=p_{t}+(1-\beta\theta)\sum^{\infty}_{k=0} \left(\beta\theta\bar{m}\right)^{k}\mathbb{E}_{t}\left[m^{f}_{\pi}(\pi_{t+1}+...+\pi_{t+k})-m^{f}_{x}\mu_{t+k}\right]
+\end{equation}
+
+\subsubsection*{Equation 58}
+
+\begin{equation}\tag{58}
+    \kappa = m^{f}_{x}\bar{\kappa}
+\end{equation}
+
+\subsection{Nonconstant Trend Inflation and Neo-Fisherian Paradoxes}
+
+\subsubsection*{Equation 59}
+
+\begin{equation}\tag{59}
+    \pi^{d}_{t}=(1-\zeta)\bar{pi}_{t}+\zeta\bar{pi}_{t}^{CB}
+\end{equation}
+
+Where : 
+\begin{itemize}
+    \item $\bar{\pi}_{t}$ is the moving average of past inflation 
+    \item $\bar{\pi}_{t}^{CB}$ is the inflation guidance 
+\end{itemize}
+
+\subsubsection*{Equation 60}
+
+\begin{equation}\tag{60}
+    x_{t}=M\mathbb{E}_{t}\left[x_{t+1}\right]-\sigma\left(i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t}\right)
+\end{equation}
+
+\subsubsection*{Equation 61}
+
+\begin{equation}\tag{61}
+    \pi_{t}=\beta\cdot M^{f} \mathbb{E}_t\left[\hat{\pi}_{t+1}\right]+\kappa\cdot x_{t}
+\end{equation}
+
+\subsubsection*{Equation 62, Proposition 12}
+
+\begin{equation}\tag{62}
+    \phi_{\pi}+\zeta \frac{(1-\beta M^{f})}{\kappa}\phi_{x}+\zeta\frac{(1-\beta M^{f})(1-M)}{\kappa \sigma}>1
+\end{equation}
+
+\subsubsection*{Equation 63}
+
+\begin{equation}\tag{63}
+    \phi_{\pi}+\zeta \frac{(1-\beta M^{f})}{\kappa}\phi_{x}+\zeta\frac{(1-\beta M^{f})(1-M)}{\kappa \sigma}>1
+\end{equation}
+
+
 
 \end{document}
