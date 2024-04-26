@@ -28,29 +28,42 @@
         & := (1+\bar{r}+\hat{r}^{BR}(\textbf{X}_t))(k_{t}+\bar{y}+\hat{y}^{BR}(N_{t},\textbf{X}_t)-c_{t})
     \end{split}
 \end{equation}
-With : 
+Equation (49) translates the perception of the law of motion of the personal wealth $k$, where : 
 \begin{itemize}
-    \item $k_{t+1}$ the capital at time $t+1$
-    \item $\textbf{G}^{k,BR}$ the ... ?
-    \item $c_t$ the consumption at time $t$
-    \item $N_{t}$ work at time $t$
-    \item $k_t$ capital at time $t$
-    \item $\bar{r}$ the ... ?
-    \item $\hat{r}^{BR}$ the ... ?
-    \item $\textbf{X}_t$ the ... ?
-    \item $\bar{y}$ the ... ?
-    \item $\hat{y}^{BR}(N_t,\textbf{X}_{t})$ the ... ?
-    \item $\textbf{X}_{t}$ the ... ?  
+    \item $k_{t+1}$ is the personal wealth at time $t+1$
+    \item $\textbf{G}^{k,BR}$ is the transition function of personal wealth under bounded rationality, i.e. the perception of the transition function under bounded rationality
+    \item $c_t$ is the consumption at time $t$
+    \item $N_{t}$ is work at time $t$
+    \item $\bar{r}$ the interest rate at the steady state
+    \item $\hat{r}^{BR}$ the perception under bounded rationality of the deviation of the interest rate from the steady state 
+    \item $\textbf{X}_t$ the state vector
+    \item $\bar{y}$ the income at the steady state 
+    \item $\hat{y}^{BR}(N_t,\textbf{X}_{t})$ the perception under bounded rationality of the deviation of the income from the steady state
 \end{itemize}
 
 \subsubsection*{Equation 50}
 
 \begin{equation}\tag{50}
     \begin{cases}
-        \hat{r}^{BR} = m_{r} \hat{r}(\textbf{X}_{t}) \\
-        \hat{y}^{BR}(N_{t},\textbf{X}_{t}) = m_{y}\hat{y}(\textbf{X}_{t})+\omega(\textbf{X}_{t})(N_{t}-N_{t}\textbf{X}_{t})
+        \hat{r}^{BR} = m_{r}\cdot\hat{r}(\textbf{X}_{t}) \\
+        \hat{y}^{BR}(N_{t},\textbf{X}_{t}) = m_{y}\cdot\hat{y}(\textbf{X}_{t})+\omega(\textbf{X}_{t})(N_{t}-N_{t}\textbf{X}_{t})
     \end{cases}
 \end{equation}
+
+The equation (50) defines the perceived values under bounded rationality of the interest rate and of the income, where : 
+\begin{itemize}
+    \item $\hat{r}^{BR}$ is the perception of the deviation of the interest rate from the steady state under bounded rationality
+    \item $m_{r}\in\left[0,1\right]$ is the attention discount factor for the interest rate
+    \item $\hat{r}_{t}(\textbf{X}_{t})$ is the objective value of the deviation of the interest rate from the steady state 
+    
+    \item $\hat{y}^{BR}(N_{t},\textbf{X}_{t})$ is the perception of the deviation of the personal from the steady state under bounded rationality, which is function of the number of hours worked, and of the macroeconomics state vector at time $t$
+    \item $m_{y}\in\left[0,1\right]$ is the attention discount factor for the personal income
+    \item $\omega(\textbf{X}_{t})$ is the real wage, which is function of the macroeconomic state vector
+    \item $N(\textbf{X}_{t})$ is the aggregate labor supply
+\end{itemize}
+The perceptions of the laws of motion are thus further refined by differentiating the attention level in function of the economic variable considered. 
+Taken together, equations (49) and (50) can be taken as more comple budget constraints, that are to take into account in the maximisation process of the utility function.
+Note that both discount factors $m_{r}$ and $m_{y}$ apply to the period $t$, meaning they are contemporaneous discount factor. 
 
 \subsubsection*{Equation 51, Lemma 5 (Term Structure of Attention)}
 
@@ -60,6 +73,20 @@ With :
         \mathbb{E}_{t}^{BR}\left[\hat{y}^{BR}(\textbf{X}_{t+k})\right]=m_{r}\bar{m}^{k}\mathbb{E}_{t}\left[\hat{y}(\textbf{X}_{t+k})\right]
     \end{cases}
 \end{equation}
+
+Equation (51) is the application of Lemma 1 (equation (11)) on the perceived values just defined in equations (49) and (50), where : 
+\begin{itemize}
+    \item $\mathbb{E}_{t}^{BR}$ is the operator of the expected value under bounded rationality, i.e. the behavioral expectation defined in equation (11)
+    \item $\hat{y}^{BR}(N_{t},\textbf{X}_{t})$ is the perception of the deviation of the personal from the steady state under bounded rationality, which is function of the number of hours worked, and of the macroeconomics state vector at time $t$
+    \item $\hat{r}^{BR}$ is the perception of the deviation of the interest rate from the steady state under bounded rationality
+    \item $m_{r}\in\left[0,1\right]$ is the attention discount factor for the interest rate
+    \item $m_{y}\in\left[0,1\right]$ is the attention discount factor for the personal income
+    \item $\bar{m}$ is the general discount factor applicable for all future variables
+\end{itemize}
+
+Equation (51) is the main consequence of the refinment previously done in equations (49) and (50) : not only are the agents generally myopic to the future, but they are also not fully attentive to present variables, depending on the variables.
+It can indeed seem plausible to say that they pay more attention to the income than to the interest rate, even when they have the information about the current period.
+This equation, coupled with the next one, argues that one is not fully rational even when they have acces to the infomraiont of their present income and personal Euler equation, because they have this present attention deficiency to income $m_{y}$.
 
 \subsubsection*{Equation 52}
 
@@ -78,7 +105,21 @@ Where :
 \begin{equation}\tag{53}
     \frac{\Delta^{GE}}{\Delta^{\text{direct}}}=R^{\tau+1}
 \end{equation}
+To understand this equation, we have to add :
+
+\begin{equation*}
+    \begin{cases}
+        \Delta^{\text{direct}}:=\frac{\partial \hat{c}_{0}}{\partial \hat{r}_{\tau}}\bigg\rvert_{(y_{t})_{t\geq0 \text{ held constant}}} = -\alpha\cdot m_{r}\cdot\bar{m}^{\tau}\frac{1}{R^{\tau}} \\
+        \Delta^{GE}:=\frac{\partial \hat{c}_{0}}{\partial \hat{r}_{\tau}}=-\alpha m_{r}\cdot M^{\tau} \frac{R}{R-r\cdot m_{Y}}R 
+    \end{cases}
+\end{equation*}
     
+Where : 
+\begin{itemize}
+    \item $M= \frac{\bar{m}}{R-r\cdot m_{Y}}$ 
+    \item $\Delta^{\text{direct}}$
+    \item $\Delta^{\text{GE}}$
+\end{itemize}
 
 \subsubsection*{Equation 54}
 

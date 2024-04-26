@@ -8,7 +8,7 @@
 
 \title{Macroeconomics 2 Presentation}
 \subtitle{Article review :\\ Gabaix, Xavier. 2020. "A Behavioral New Keynesian Model." American Economic Review, 110(8): 2271-2327}
-\author{GUGELMO CAVALHEIRO DIAS Paulo \\ \and MITASH Nayanika \\ \and WANG Shang}
+\author{GUGELMO CAVALHEIRO DIAS Paulo \\ MITASH Nayanika \\ WANG Shang}
 \institute{Sciences Po}
 \date{\today}
 
@@ -72,8 +72,7 @@
 
 \subsubsection{Constraint}
 \begin{frame}{\subsecname}
-    \begin{equation}
-        \label{4}
+    \begin{equation}\label{4}
         k_{t+1}=(1+r_t)(k_t-c_t+y_t)
     \end{equation}
 \end{frame}
@@ -150,22 +149,55 @@
     \end{equation}
 \end{frame}
 
+\begin{frame}{\subsecname}
+    \begin{equation}\tag{52}
+        \hat{c}_{t}=\mathbb{E}_{t}\left[\sum_{\tau\geq t}\frac{\bar{m}^{\tau-t}}{R^{\tau-t}}\left(b_{r}m_{r}\hat{r}(\textbf{X}_{\tau})+m_{Y}\frac{\bar{r}}{R}\hat{y}(\textbf{X}_{\tau})\right)\right]
+    \end{equation}
+    \begin{equation}\tag{53}
+        \frac{\Delta^{GE}}{\Delta^{\text{direct}}}=R^{\tau+1}
+    \end{equation}
+    \begin{equation}\tag{54}
+        \frac{\Delta^{GE}}{\Delta^{\text{direct}}}=\left(\frac{R}{R-rm_{Y}}\right)^{\tau+1}\in\left[1, R^{\tau+1}\right]
+    \end{equation}
+\end{frame}
+
+
 \subsection{Flattening of the Phillips Curve via Imperfect Firm Attention}
-\begin{frame}
+\begin{frame}{\subsecname}
+    \begin{equation}\tag{55}
+        \varv^{BR}(q_{it},(\textbf{X}_{\tau})):=\varv^{0}\left(q_{it}-m^{f}_{\pi}\Pi(\textbf{X}_{\tau}),m^{f}_{x}\mu(\textbf{X}_{\tau}),c(\textbf{X}_{\tau})\right)
+    \end{equation}
+    \begin{equation}\tag{56}
+        \max_{q_{it}}{\mathbb{E}_{t}^{BR}\left[\sum_{\tau=t}^{\infty}\left(\beta\theta\right)^{\tau-t}\frac{c(\textbf{X}_{\tau})^{-\gamma}}{c(\textbf{X}_{\tau})^{-\gamma}}\varv^{BR}(q_{it},\textbf{X}_{\tau})\right]}
+    \end{equation}
+    \begin{equation}\tag{57}
+        p^{*}_{t}=p_{t}+(1-\beta\theta)\sum^{\infty}_{k=0} \left(\beta\theta\bar{m}\right)^{k}\mathbb{E}_{t}\left[m^{f}_{\pi}(\pi_{t+1}+...+\pi_{t+k})-m^{f}_{x}\mu_{t+k}\right]
+    \end{equation}
+    \begin{equation}\tag{58}
+        \kappa = m^{f}_{x}\bar{\kappa}
+    \end{equation}
 \end{frame}
 
 \subsection{Nonconstant Trend Inflation and Neo- Fisherian Paradoxes}
-\begin{frame}
+\begin{frame}{\subsecname}
+    \begin{equation}\tag{59}
+        \pi^{d}_{t}=(1-\zeta)\bar{\pi}_{t}+\zeta\bar{\pi}_{t}^{CB}
+    \end{equation}
+    \begin{equation}\tag{60}
+        x_{t}=M\mathbb{E}_{t}\left[x_{t+1}\right]-\sigma\left(i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t}\right)
+    \end{equation}
+    \begin{equation}\tag{61}
+        \pi_{t}=\beta\cdot M^{f} \mathbb{E}_t\left[\hat{\pi}_{t+1}\right]+\kappa\cdot x_{t}
+    \end{equation}
+    \begin{equation}\tag{62}
+        \phi_{\pi}+\zeta \frac{(1-\beta M^{f})}{\kappa}\phi_{x}+\zeta\frac{(1-\beta M^{f})(1-M)}{\kappa \sigma}>1
+    \end{equation}
 \end{frame}
 
 \section{Discussion of the Behavioral Assumptions}
 \begin{frame}
     \ReduceFont
     \tableofcontents[currentsection, hideallsubsections]
-\end{frame}
-
-\begin{frame}
-    \tableofcontents[currentsection, hideothersubsections, sections=\value{section}]
 \end{frame}
 
 \begin{frame}
