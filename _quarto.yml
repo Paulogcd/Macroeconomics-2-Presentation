@@ -6,7 +6,7 @@ website:
   title: "Macroeconomics 2 Presentation"
   navbar:
     title: false
-    background: '#D3D3D3'
+    background: '#e0e0e0'
     left:
       - href: ../
         text: Home
