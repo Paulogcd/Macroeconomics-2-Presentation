@@ -11,7 +11,7 @@ website:
       - href: ../
         text: Home
       - href: index.qmd
-        text: Our project
+        text: Our presentation
       - href: about.qmd
         text: About
       - icon: github
