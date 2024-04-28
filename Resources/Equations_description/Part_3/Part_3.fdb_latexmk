@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1714316414 "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Part_3/Part_3.tex" "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Part_3/Part_3.pdf" "Part_3" 1714316417
-  "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Part_3/Part_3.aux" 1714316416 1291 6a7e6cfaa1707bd768de5e6a3691d172 ""
-  "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Part_3/Part_3.tex" 1714316414 16564 704bdb8d8b69dc46655f973534c14e2d ""
+["pdflatex"] 1714324001 "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Part_3/Part_3.tex" "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Part_3/Part_3.pdf" "Part_3" 1714324004
+  "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Part_3/Part_3.aux" 1714324003 1291 6a7e6cfaa1707bd768de5e6a3691d172 ""
+  "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Part_3/Part_3.tex" 1714324000 16699 ede8fd306633c1da5de301da2fd91ece ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -115,13 +115,13 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1632435985 2724742 d4c7191149db17f17f7af666ce47b818 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "Part_3.aux" 1714316416 1291 6a7e6cfaa1707bd768de5e6a3691d172 "pdflatex"
-  "Part_3.out" 1714316416 1212 32a64903b50ce5e1262d4be83333e778 "pdflatex"
-  "Part_3.tex" 1714316414 16564 704bdb8d8b69dc46655f973534c14e2d ""
+  "Part_3.aux" 1714324003 1291 6a7e6cfaa1707bd768de5e6a3691d172 "pdflatex"
+  "Part_3.out" 1714324003 1212 32a64903b50ce5e1262d4be83333e778 "pdflatex"
+  "Part_3.tex" 1714324000 16699 ede8fd306633c1da5de301da2fd91ece ""
   (generated)
-  "Part_3.aux"
-  "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Part_3/Part_3.pdf"
-  "Part_3.pdf"
   "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Part_3/Part_3.log"
-  "Part_3.out"
   "Part_3.log"
+  "Part_3.out"
+  "Part_3.pdf"
+  "/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Equations_description/Part_3/Part_3.pdf"
+  "Part_3.aux"

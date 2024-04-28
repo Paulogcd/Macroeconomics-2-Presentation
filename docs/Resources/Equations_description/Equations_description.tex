@@ -32,20 +32,20 @@ The sections of the article are however given as subsections, to provide some ad
 \pagebreak
 
 \section{A Behavioral Model}
-Let's ignore the first two equations since they are the same as (28) and (29), that will be explained later.
+The first two equations are the same as (28) and (29) and will be explained later.
 
 \subsection{Introduction}
 
 \subsubsection*{Equation 1}
 % equation 1%
 \begin{equation}
-    x_{t}=M\cdot\mathbb{E}_{t}\left[ x{t+1} -\sigma (i_{t}-\mathbb{E}t\left[\pi_{t+1}\right]-r^{n}_{t})\right]
+    x_{t}=M\cdot\mathbb{E}_{t}\left[ x{t+1} -\sigma (i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t})\right]
 \end{equation}
 
 \subsubsection*{Equation 2}
 % equation 2%
 \begin{equation}
-    \pi_{t}=\beta\cdot M^{f} \mathbb{E}t\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
+    \pi_{t}=\beta\cdot M^{f} \mathbb{E}_{t}\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
 \end{equation}
 
 \subsection{Basic Setup and the Household’s Problem}
@@ -99,13 +99,13 @@ Equation (5) describes the evolution of macroeconomic variables, where :
 
 % equation 6%
 \begin{equation}
-    k_{t+1}=G^{k}(c_{t},N_{t}, k_{t}, \bm{X}t):= (1+\bar{r}+\hat{r}(\bm{X}_{t}))(k_{t}+\bar{y}+\hat{y}_(N_{t},\bm{X}t)-c_{t})
+    k_{t+1}=G^{k}(c_{t},N_{t}, k_{t}, \bm{X}_{t}):= (1+\bar{r}+\hat{r}(\bm{X}_{t}))(k_{t}+\bar{y}+\hat{y}_(N_{t},\bm{X}_{t})-c_{t})
 \end{equation}
 
 Equation (6) is the application of the consideration of a set of macroeconomic variables on the law of motion of real financial wealth $k_{t}$, where : 
 \begin{itemize}
     \item $\bar{r}$ is the steady state value of the real interest rate, that does not depend on time
-    \item $\hat{r}(\bm{X}t)$ is the value of the deviation from the steady state of the real interest rate, that depends on the state vector $\bm{X}_{t}$ at time $t$
+    \item $\hat{r}(\bm{X}_{t})$ is the value of the deviation from the steady state of the real interest rate, that depends on the state vector $\bm{X}_{t}$ at time $t$
     \item $\bar{y}$ is the steady state value of the agent's real income, that does not depend on time
     \item $\hat{y}(N_{t},\bm{X}_{t})$ is the deviation from the steady state of the agent's real income, that depends on the number of hours worked at time $t$ and on the state vector at time $t$
     \item $c_{t}$ is the aggregate consumption level at time $t$ of the agent
@@ -409,7 +409,7 @@ Equation (28) is the Behavioural IS Curve. Essentially we are representing the E
 
 \subsubsection*{Equation 29 - Proposition 2, second equation}
 \begin{equation}
-    \pi_{t}=\beta\cdot M^{f} \mathbb{E}t\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
+    \pi_{t}=\beta\cdot M^{f} \mathbb{E}_{t}\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
 \end{equation}
 
 Equation (29) is the Behavioural Phillips curve where: 

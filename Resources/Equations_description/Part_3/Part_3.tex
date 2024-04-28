@@ -46,7 +46,7 @@ Equation (49) translates the perception of the law of motion of the personal wea
 \begin{equation}\tag{50}
     \begin{cases}
         \hat{r}^{BR} = m_{r}\cdot\hat{r}(\textbf{X}_{t}) \\
-        \hat{y}^{BR}(N_{t},\textbf{X}_{t}) = m_{y}\cdot\hat{y}(\textbf{X}_{t})+\omega(\textbf{X}_{t})(N_{t}-N_{t}\textbf{X}_{t})
+        \hat{y}^{BR}(N_{t},\textbf{X}_{t}) = m_{y}\cdot\hat{y}(\textbf{X}_{t})+\omega(\textbf{X}_{t})(N_{t}-N_{t}(\textbf{X}_{t}))
     \end{cases}
 \end{equation}
 
@@ -57,8 +57,9 @@ The equation (50) defines the perceived values under bounded rationality of the 
     \item $\hat{r}_{t}(\textbf{X}_{t})$ is the objective value of the deviation of the interest rate from the steady state 
     
     \item $\hat{y}^{BR}(N_{t},\textbf{X}_{t})$ is the perception of the deviation of the personal from the steady state under bounded rationality, which is function of the number of hours worked, and of the macroeconomics state vector at time $t$
+    \item $\hat{y}^{BR}(\textbf{X}_{t})=\hat{y}^{BR}(N(\textbf{X}_{t}),\textbf{X}_{t})=\hat{y}(\textbf{X}_{t})$ is the perceived deviation value of the aggregate income
     \item $m_{y}\in\left[0,1\right]$ is the attention discount factor for the personal income
-    \item $\omega(\textbf{X}_{t})$ is the real wage, which is function of the macroeconomic state vector
+    \item $\omega(\textbf{X}_{t})$ is the real wage
     \item $N(\textbf{X}_{t})$ is the aggregate labor supply
 \end{itemize}
 The perceptions of the laws of motion are thus further refined by differentiating the attention level in function of the economic variable considered. 
@@ -69,8 +70,8 @@ Note that both discount factors $m_{r}$ and $m_{y}$ apply to the period $t$, mea
 
 \begin{equation}\tag{51}
     \begin{cases}
-        \mathbb{E}_{t}^{BR}\left[\hat{r}^{BR}(\textbf{X}_{t+k})\right]=m_{r}\bar{m}^{k}\mathbb{E}_{t}\left[\hat{r}(\textbf{X}_{t+k})\right] \\
-        \mathbb{E}_{t}^{BR}\left[\hat{y}^{BR}(\textbf{X}_{t+k})\right]=m_{y}\bar{m}^{k}\mathbb{E}_{t}\left[\hat{y}(\textbf{X}_{t+k})\right]
+        \mathbb{E}_{t}^{BR}\left[\hat{r}^{BR}(\textbf{X}_{t+k})\right]=m_{r}\cdot\bar{m}^{k}\cdot\mathbb{E}_{t}\left[\hat{r}(\textbf{X}_{t+k})\right] \\
+        \mathbb{E}_{t}^{BR}\left[\hat{y}^{BR}(\textbf{X}_{t+k})\right]=m_{y}\cdot\bar{m}^{k}\cdot\mathbb{E}_{t}\left[\hat{y}(\textbf{X}_{t+k})\right]
     \end{cases}
 \end{equation}
 
@@ -206,7 +207,7 @@ It allows to have a new maximisation program, for firms with bounded rationality
 \subsubsection*{Equation 56}
 
 \begin{equation}\tag{56}
-    \max_{q_{it}}{\mathbb{E}_{t}^{BR}\left[\sum_{\tau=t}^{\infty}\left(\beta\theta\right)^{\tau-t}\frac{c(\textbf{X}_{\tau})^{-\gamma}}{c(\textbf{X}_{\tau})^{-\gamma}}\varv^{BR}(q_{it},\textbf{X}_{\tau})\right]}
+    \max_{q_{it}}{\mathbb{E}_{t}^{BR}\left[\sum_{\tau=t}^{\infty}\left(\beta\theta\right)^{\tau-t}\frac{c(\textbf{X}_{\tau})^{-\gamma}}{c(\textbf{X}_{t})^{-\gamma}}\varv^{BR}(q_{it},\textbf{X}_{\tau})\right]}
 \end{equation}
 
 Equation (56) describes the maximisation program of a firm under bounded rationality, it is the same as equation (16), where : 

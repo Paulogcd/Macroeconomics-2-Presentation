@@ -1,4 +1,12 @@
 \documentclass{beamer}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{csquotes}
+
+\DeclareSymbolFont{matha}{OML}{txmi}{m}{it}% txfonts
+\DeclareMathSymbol{\varv}{\mathord}{matha}{118}
 \usetheme{metropolis}
 
 \usefonttheme{serif} % default family is serif
@@ -11,7 +19,6 @@
 \author{GUGELMO CAVALHEIRO DIAS Paulo \\ MITASH Nayanika \\ WANG Shang}
 \institute{Sciences Po}
 \date{\today}
-
 
 \newcommand\ReduceFont{\fontsize{10}{7.2}\selectfont}
 
@@ -118,6 +125,7 @@
 \end{frame}
 
 \section{Behavioral Enrichments of the Model}
+
 \begin{frame}
     \ReduceFont
     \tableofcontents[currentsection, hideallsubsections]
@@ -129,53 +137,207 @@
 
 \subsection{Term Structure of Consumer Attention}
 \begin{frame}{\subsecname}
+    It is plausible that consumers do not pay attention equally to all economic variables, even in the present. 
+    We could therefore introduce attention discount factors that are variable specific. 
+    Those attention discount factors would then yield perceived variables under Bounded Rationality : 
+    \begin{itemize}
+        \item $\hat{r}^{BR}$ the perceived interest rate under bounded rationality
+        \item $\hat{y}^{BR}$ the perceived income under bounded rationality
+    \end{itemize}
+    Prior to this, consumers perceived perfectly variables at the current period, now, they do not anymore.
+\end{frame}
+    
+\begin{frame}{\subsecname}
+    The law of motion of the personal wealth of the consumer becomes thus a \textbf{perceived law of motion}
+    \begin{equation}\tag{6}
+        \begin{split}
+            k_{t+1}= &\ G^{k}(c_{t},N_{t}, k_{t}, \bm{X}_{t}) \\ 
+            & := (1+\bar{r}+\hat{r}(\bm{X}_{t}))(k_{t}+\bar{y}+\hat{y}(N_{t},\bm{X}t)-c_{t})
+        \end{split}
+    \end{equation}
+    Turns into :    
     \begin{equation} \tag{49}
         \begin{split}
             k_{t+1}= &\  \textbf{G}^{k,BR}(c_{t},N_{t},k_{t},\textbf{X}_{t}) \\
             & := (1+\bar{r}+\hat{r}^{BR}(\textbf{X}_t))(k_{t}+\bar{y}+\hat{y}^{BR}(N_{t},\textbf{X}_t)-c_{t})
         \end{split}
     \end{equation}
+\end{frame}
+
+\begin{frame}
+    The perceived values of interest rate and income are defined such that :
     \begin{equation}\tag{50}
         \begin{cases}
-            \hat{r}^{BR} = m_{r} \hat{r}(\textbf{X}_{t}) \\
-            \hat{y}^{BR}(N_{t},\textbf{X}_{t}) = m_{y}\hat{y}(\textbf{X}_{t})+\omega(\textbf{X}_{t})(N_{t}-N_{t}\textbf{X}_{t})
+            \hat{r}^{BR} = m_{r}\cdot\hat{r}(\textbf{X}_{t}) \\
+            \hat{y}^{BR}(N_{t},\textbf{X}_{t}) = m_{y}\cdot\hat{y}(\textbf{X}_{t})+\omega(\textbf{X}_{t})(N_{t}-N_{t}(\textbf{X}_{t}))
         \end{cases}
     \end{equation}
+\end{frame}
+
+\begin{frame}
+    Now, consumers are already behavioral, i.e. they have a general attention discount factor, from Lemma 1 in equation (11) :
+    \begin{equation*}\tag{11}
+        \mathbb{E}_{t}^{BR}\left[z\left(\bm{X}_{t+k}\right)\right]=\bar{m}^{k}\cdot\mathbb{E}_{t}\left[z\left(\bm{X}_{t+k}\right)\right]
+    \end{equation*}
+    Applied to the perceived interest rate and perceived income, we thus get the \textbf{Lemma 5 (Term Structure of Attention)}:
     \begin{equation}\tag{51}
         \begin{cases}
-            \mathbb{E}_{t}^{BR}\left[\hat{r}^{BR}(\textbf{X}_{t+k})\right]=m_{r}\bar{m}^{k}\mathbb{E}_{t}\left[\hat{r}(\textbf{X}_{t+k})\right] \\
-            \mathbb{E}_{t}^{BR}\left[\hat{y}^{BR}(\textbf{X}_{t+k})\right]=m_{r}\bar{m}^{k}\mathbb{E}_{t}\left[\hat{y}(\textbf{X}_{t+k})\right]
+            \mathbb{E}_{t}^{BR}\left[\hat{r}^{BR}(\textbf{X}_{t+k})\right]=m_{r}\cdot\bar{m}^{k}\cdot\mathbb{E}_{t}\left[\hat{r}(\textbf{X}_{t+k})\right] \\
+            \mathbb{E}_{t}^{BR}\left[\hat{y}^{BR}(\textbf{X}_{t+k})\right]=m_{y}\cdot\bar{m}^{k}\cdot\mathbb{E}_{t}\left[\hat{y}(\textbf{X}_{t+k})\right]
         \end{cases}
     \end{equation}
 \end{frame}
 
 \begin{frame}{\subsecname}
+    What are consequences of this enriched attention structure term ? \\
+    When we solve for consumption\footnote{For more details on the derivation, check the equations decription file.}, we get \textbf{Proposition 8 (Behavioral Consumption Function)} :
     \begin{equation}\tag{52}
         \hat{c}_{t}=\mathbb{E}_{t}\left[\sum_{\tau\geq t}\frac{\bar{m}^{\tau-t}}{R^{\tau-t}}\left(b_{r}m_{r}\hat{r}(\textbf{X}_{\tau})+m_{Y}\frac{\bar{r}}{R}\hat{y}(\textbf{X}_{\tau})\right)\right]
     \end{equation}
+    With :
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{equation*}
+                \begin{cases}
+                    c_{t}=c_{t}^{d}+\hat{c}_{t} \\ 
+                    c^{d}_{t} = \bar{y} + b_{k}\cdot k_{t} \\
+                    b_{k}:=\frac{\bar{r}}{R}\cdot\frac{\phi}{\phi+\gamma} \\ 
+                \end{cases}
+            \end{equation*}
+        \end{column}
+        \begin{column}{0.5\textwidth}  %%<--- here
+             \begin{equation*}
+                \begin{cases}
+                    m_{Y}=\frac{\phi\cdot m_{y}+\gamma}{\phi+\gamma} \\
+                    b_{r}:=-\frac{1}{\gamma\cdot R^{2}}
+                \end{cases}
+             \end{equation*}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{\subsecname}
+    Interest rate has \textbf{direct} and \textbf{indirect} effects on consumption. \\ 
+    For a consumer, a decrease in future interest rate : 
+    \begin{itemize}
+        \item increases their present consumption, because it is more profitable to consume right now (direct effect)
+        \item increases other consumers future consumption, increasing their future income, increasing their current consumption (indirect effect)
+    \end{itemize}
+    Therefore, the aggregate consumption multiplies the positive effect on consumption of a decrease in future interest rate. 
+    What does this behavioral model imply for this multiplicator ?
+\end{frame}
+
+\begin{frame}{\subsecname}
+    In the \textbf{rational consumer} case : \\
+
+    If we derive from equation (52), we get the direct effect : 
+    \begin{equation*}
+        \Delta^{\text{direct}}:=\frac{\partial \hat{c}_{0}}{\partial \hat{r}_{\tau}}\bigg\rvert_{(y_{t})_{t\geq0 \text{ held constant}}} = -\alpha\cdot \frac{1}{R^{\tau}}
+    \end{equation*}
+    
+    If we derive from equation (26), we get the indirect effect :
+    \begin{equation*}
+        \Delta^{GE}:=\frac{\partial \hat{c}_{0}}{\partial \hat{r}_{\tau}}=-\alpha R 
+    \end{equation*}
+
+    Put together : 
     \begin{equation}\tag{53}
         \frac{\Delta^{GE}}{\Delta^{\text{direct}}}=R^{\tau+1}
     \end{equation}
+\end{frame}
+
+\begin{frame}{\subsecname}
+    In the \textbf{behavioral consumer} case : \\
+
+    If we derive from equation (52), we get the direct effect : 
+    \begin{equation*}
+        \Delta^{\text{direct}}:=\frac{\partial \hat{c}_{0}}{\partial \hat{r}_{\tau}}\bigg\rvert_{(y_{t})_{t\geq0 \text{ held constant}}} = -\alpha\cdot m_{r}\cdot\bar{m}^{\tau}\frac{1}{R^{\tau}}
+    \end{equation*}
+
+    If we derive from equation (26), we get the indirect effect :
+    \begin{equation*}
+        \Delta^{GE}:=\frac{\partial \hat{c}_{0}}{\partial \hat{r}_{\tau}}=-\alpha m_{r}\cdot M^{\tau} \frac{R}{R-r\cdot m_{Y}}R 
+    \end{equation*}
+
+    Put together : 
     \begin{equation}\tag{54}
         \frac{\Delta^{GE}}{\Delta^{\text{direct}}}=\left(\frac{R}{R-rm_{Y}}\right)^{\tau+1}\in\left[1, R^{\tau+1}\right]
     \end{equation}
 \end{frame}
 
+\begin{frame}{\subsecname}
+    In a behavioral framework, the multiplicative effect is dampened by bounded rationality. \\
+
+    An attention discount factor that is variable specific allows to explain why the Keynesian multiplicator is not as strong as what theory predicts. \\ 
+
+    What about variable specific attention deficiency for firms now ?
+\end{frame}
 
 \subsection{Flattening of the Phillips Curve via Imperfect Firm Attention}
 \begin{frame}{\subsecname}
+    If we introduce variable specific inattention for firms, equation (15), defining the real profit of the firm : 
+    \begin{equation}\tag{15}
+        \varv\left(q_{it},\bm{X}{\tau}\right):=\varv^{0}\left(q_{it}-\Pi(\bm{X}{\tau}),\mu(\bm{X}{\tau}),c(\bm{X}_{\tau})\right)
+    \end{equation}
+    turns into a perceived real profit of the firm :
     \begin{equation}\tag{55}
-        \varv^{BR}(q_{it},(\textbf{X}_{\tau})):=\varv^{0}\left(q_{it}-m^{f}_{\pi}\Pi(\textbf{X}_{\tau}),m^{f}_{x}\mu(\textbf{X}_{\tau}),c(\textbf{X}_{\tau})\right)
+        \varv^{BR}(q_{it},(\textbf{X}_{\tau})):=\varv^{0}\left(q_{it}-m^{f}_{\pi}\cdot\Pi(\textbf{X}_{\tau}),m^{f}_{x}\cdot\mu(\textbf{X}_{\tau}),c(\textbf{X}_{\tau})\right)
     \end{equation}
+    Where : 
+    \begin{itemize}
+        \item $m^{f}_{\pi}$ is the attention deficit to inflation 
+        \item $m^{f}_{x}$ is the attention deficit to marginal cost
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\subsecname}
+    The maximisation program of equation (16) :
+    \begin{equation}\tag{16}
+        \max_{q_{it}} \mathbb{E}_{t}\left[\sum_{\tau=t}^{\infty}(\beta\theta)^{\tau-t} \frac{c\left(\bm{X_{\tau}}\right)^{-\gamma}}{\left(\bm{X_{t}}\right)^{-\gamma}} \varv\left(q_{it},\bm{X}{\tau}\right)\right]
+    \end{equation}
+    turns into :
     \begin{equation}\tag{56}
-        \max_{q_{it}}{\mathbb{E}_{t}^{BR}\left[\sum_{\tau=t}^{\infty}\left(\beta\theta\right)^{\tau-t}\frac{c(\textbf{X}_{\tau})^{-\gamma}}{c(\textbf{X}_{\tau})^{-\gamma}}\varv^{BR}(q_{it},\textbf{X}_{\tau})\right]}
+        \max_{q_{it}}{\mathbb{E}_{t}^{BR}\left[\sum_{\tau=t}^{\infty}\left(\beta\theta\right)^{\tau-t}\frac{c(\textbf{X}_{\tau})^{-\gamma}}{c(\textbf{X}_{t})^{-\gamma}}\varv^{BR}(q_{it},\textbf{X}_{\tau})\right]}
     \end{equation}
+\end{frame}
+
+\begin{frame}{\subsecname}
+    Solving it yields :
     \begin{equation}\tag{57}
-        p^{*}_{t}=p_{t}+(1-\beta\theta)\sum^{\infty}_{k=0} \left(\beta\theta\bar{m}\right)^{k}\mathbb{E}_{t}\left[m^{f}_{\pi}(\pi_{t+1}+...+\pi_{t+k})-m^{f}_{x}\mu_{t+k}\right]
+        \begin{split}
+            & p^{*}_{t} = p_{t}+(1-\beta\theta) \cdot \\
+            & \sum^{\infty}_{k=0} \left(\beta\theta\bar{m}\right)^{k}\mathbb{E}_{t}\left[m^{f}_{\pi}(\pi_{t+1}+...+\pi_{t+k})-m^{f}_{x}\mu_{t+k}\right]
+        \end{split}
     \end{equation}
+\end{frame}
+
+\begin{frame}{\subsecname}
+    We also get : 
+    \begin{equation*}
+        M^{f}=\bar{m}\left(\theta+m^{f}_{\pi}\cdot(1-\theta)\cdot\frac{1-\beta\cdot\theta}{1-\beta\cdot\theta\cdot\bar{m}}\right)\in\left[0,1\right]
+    \end{equation*}
     \begin{equation}\tag{58}
         \kappa = m^{f}_{x}\bar{\kappa}
     \end{equation}
+
+    Where 
+    \begin{itemize}
+        \item $M^{f}$ is the general attention factor of the firm
+        \item $m^{f}_{x}$ is the attention deficiency to the output gap
+        \item $\kappa=m_{x}^{f}\cdot\bar{\kappa}$, is the perceived value of the importance of outputgap on inflation
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\subsecname}
+    If we solve the Phillips curve, the equation (29) : 
+    \begin{equation}\tag{29}
+        \pi_{t}=\beta\cdot M^{f}\cdot\mathbb{E}t\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
+    \end{equation}
+    turns into : 
+    \textbf{Proposition 10 (Phillips Curve with Behavioral Firms, Allowing for Imperfect Attention to Inflation and Costs)} : 
+    \begin{equation*}
+        \pi_{t}=\beta\cdot\bar{m}\left(\theta+m^{f}_{\pi}\cdot(1-\theta)\cdot\frac{1-\beta\cdot\theta}{1-\beta\cdot\theta\cdot\bar{m}}\right)\cdot\mathbb{E}t\left[\pi_{t+1}\right]+m_{x}^{f}\cdot\bar{\kappa}\cdot x_{t}
+    \end{equation*}
 \end{frame}
 
 \subsection{Nonconstant Trend Inflation and Neo- Fisherian Paradoxes}

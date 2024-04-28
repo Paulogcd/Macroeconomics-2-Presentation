@@ -15,20 +15,20 @@
 \begin{document}
 
 \section{A Behavioral Model}
-Let's ignore the first two equations since they are the same as (28) and (29), that will be explained later.
+The first two equations are the same as (28) and (29) and will be explained later.
 
 \subsection{Introduction}
 
 \subsubsection*{Equation 1}
 % equation 1%
 \begin{equation}
-    x_{t}=M\cdot\mathbb{E}_{t}\left[ x{t+1} -\sigma (i_{t}-\mathbb{E}t\left[\pi_{t+1}\right]-r^{n}_{t})\right]
+    x_{t}=M\cdot\mathbb{E}_{t}\left[ x{t+1} -\sigma (i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t})\right]
 \end{equation}
 
 \subsubsection*{Equation 2}
 % equation 2%
 \begin{equation}
-    \pi_{t}=\beta\cdot M^{f} \mathbb{E}t\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
+    \pi_{t}=\beta\cdot M^{f} \mathbb{E}_{t}\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
 \end{equation}
 
 \subsection{Basic Setup and the Household’s Problem}
@@ -80,15 +80,17 @@ Equation (5) describes the evolution of macroeconomic variables, where :
 
 \subsubsection*{Equation 6}
 
-% equation 6%
-\begin{equation}
-    k_{t+1}=G^{k}(c_{t},N_{t}, k_{t}, \bm{X}t):= (1+\bar{r}+\hat{r}(\bm{X}_{t}))(k_{t}+\bar{y}+\hat{y}_(N_{t},\bm{X}t)-c_{t})
+\begin{equation}\tag{6}
+    \begin{split}
+        k_{t+1}= &\ G^{k}(c_{t},N_{t}, k_{t}, \bm{X}_{t}) \\ 
+        & := (1+\bar{r}+\hat{r}(\bm{X}_{t}))(k_{t}+\bar{y}+\hat{y}(N_{t},\bm{X}t)-c_{t})
+    \end{split}
 \end{equation}
 
 Equation (6) is the application of the consideration of a set of macroeconomic variables on the law of motion of real financial wealth $k_{t}$, where : 
 \begin{itemize}
     \item $\bar{r}$ is the steady state value of the real interest rate, that does not depend on time
-    \item $\hat{r}(\bm{X}t)$ is the value of the deviation from the steady state of the real interest rate, that depends on the state vector $\bm{X}_{t}$ at time $t$
+    \item $\hat{r}(\bm{X}_{t})$ is the value of the deviation from the steady state of the real interest rate, that depends on the state vector $\bm{X}_{t}$ at time $t$
     \item $\bar{y}$ is the steady state value of the agent's real income, that does not depend on time
     \item $\hat{y}(N_{t},\bm{X}_{t})$ is the deviation from the steady state of the agent's real income, that depends on the number of hours worked at time $t$ and on the state vector at time $t$
     \item $c_{t}$ is the aggregate consumption level at time $t$ of the agent
@@ -146,7 +148,7 @@ Equation (10) defines the expectation of behavioral agents in function of the ra
 \subsubsection*{Equation 11 (Lemma 1)}
 
 \begin{equation}
-    \mathbb{E}_{t}^{BR}\left[z\left(\bm{X}_{t+k}\right)\right]=\bar{m}^{k}\mathbb{E}_{t}\left[z\left(\bm{X}_{t+k}\right)\right]
+    \mathbb{E}_{t}^{BR}\left[z\left(\bm{X}_{t+k}\right)\right]=\bar{m}^{k}\cdot\mathbb{E}_{t}\left[z\left(\bm{X}_{t+k}\right)\right]
 \end{equation}
 
 Equation (11) defines in the general case the behavioral expectation operator, for any function of the state vector, where : 
@@ -220,7 +222,7 @@ Equation 15 describes the flow profit of the firm in function of the real log pr
 
 \subsubsection*{Equation 16}
 \begin{equation}
-\max_{\text{q}{it}} \mathbb{E}_{t} \sum_{\tau=t}^{\infty}(\beta\theta)^{\tau-t} \frac{c\left(\bm{X_{\tau}}\right)^{-\gamma}}{\left(\bm{X_{t}}\right)^{-\gamma}} \varv\left(q_{it},\bm{X}{\tau}\right)
+    \max_{q_{it}} \mathbb{E}_{t}\left[\sum_{\tau=t}^{\infty}(\beta\theta)^{\tau-t} \frac{c\left(\bm{X_{\tau}}\right)^{-\gamma}}{\left(\bm{X_{t}}\right)^{-\gamma}} \varv\left(q_{it},\bm{X}{\tau}\right)\right]
 \end{equation}
 
 Equation (16) describes the maximisation program of the firm given that they have a Calvo-like probability of $\theta$ of being able to change their price at each period, where : 
@@ -392,7 +394,7 @@ Equation (28) is the Behavioural IS Curve. Essentially we are representing the E
 
 \subsubsection*{Equation 29 - Proposition 2, second equation}
 \begin{equation}
-    \pi_{t}=\beta\cdot M^{f} \mathbb{E}t\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
+    \pi_{t}=\beta\cdot M^{f} \mathbb{E}_{t}\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
 \end{equation}
 
 Equation (29) is the Behavioural Phillips curve where: 
