@@ -39,13 +39,13 @@ Let's ignore the first two equations since they are the same as (28) and (29), t
 \subsubsection*{Equation 1}
 % equation 1%
 \begin{equation}
-    x_{t}=M\cdot\mathbb{E}{t}\left[ x{t+1} -\sigma (i_{t}-\mathbb{E}t\left[\pi{t+1}\right]-r^{n}_{t})\right]
+    x_{t}=M\cdot\mathbb{E}_{t}\left[ x{t+1} -\sigma (i_{t}-\mathbb{E}t\left[\pi_{t+1}\right]-r^{n}_{t})\right]
 \end{equation}
 
 \subsubsection*{Equation 2}
 % equation 2%
 \begin{equation}
-    \pi_{t}=\beta\cdot M^{f} \mathbb{E}t\left[\pi{t+1}\right]+\kappa\cdot x_{t}
+    \pi_{t}=\beta\cdot M^{f} \mathbb{E}t\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
 \end{equation}
 
 \subsection{Basic Setup and the Household’s Problem}
@@ -53,7 +53,7 @@ Let's ignore the first two equations since they are the same as (28) and (29), t
 \subsubsection*{Equation 3}
 % equation 3%
 \begin{equation}
-    U = \mathbb{E}t \left[ \sum{t=0}^{\infty} \beta^{t}\left(\frac{c_{t}^{1-\gamma}-1}{1-\gamma} - \frac{N_{t}^{1+\phi}}{1+\phi}\right)\right]
+    U = \mathbb{E}_{t} \left[ \sum{t=0}^{\infty} \beta^{t}\left(\frac{c_{t}^{1-\gamma}-1}{1-\gamma} - \frac{N_{t}^{1+\phi}}{1+\phi}\right)\right]
 \end{equation}
 
 Equation (3) is just the flow utility of the Household, with : 
@@ -85,27 +85,27 @@ Equation (4) is the law of motion of the real financial wealth of the household,
 
 % equation 5%
 \begin{equation}
-    \bm{X}{t+1}=\bm{G}^{\bm{X}}\left(\bm{X}{t},\bm{\epsilon}_{t+1}\right)
+    \bm{X}_{t+1}=\bm{G}^{\bm{X}}\left(\bm{X}_{t},\bm{\epsilon}_{t+1}\right)
 \end{equation}
 
 Equation (5) describes the evolution of macroeconomic variables, where : 
 \begin{itemize}
     \item $\bm{X}_t$ is the state vector, including several macroeconomic variables of time $t$, like $\zeta_t$ the aggregate TFP, and the announced actions in monetary and fiscal policy
     \item $\bm{G}^X$ the equilibrium transition function, i.e. the function that gives the macroeconomic variables at time $t+1$ from the macroeconomic variables at the previous period
-    \item $\epsilon_{t}$ is the innovation in the economy at time $t$, with $\mathbb{E}{t}\left[\epsilon{t+1}\right]=0$, that depends on the equilibrium policies of the agent and of the government
+    \item $\epsilon_{t}$ is the innovation in the economy at time $t$, with $\mathbb{E}_{t}\left[\epsilon{t+1}\right]=0$, that depends on the equilibrium policies of the agent and of the government
 \end{itemize}
 
 \subsubsection*{Equation 6}
 
 % equation 6%
 \begin{equation}
-    k_{t+1}=G^{k}(c_{t},N_{t}, k_{t}, \bm{X}t):= (1+\bar{r}+\hat{r}(\bm{X}{t}))(k_{t}+\bar{y}+\hat{y}(N_{t},\bm{X}t)-c{t})
+    k_{t+1}=G^{k}(c_{t},N_{t}, k_{t}, \bm{X}t):= (1+\bar{r}+\hat{r}(\bm{X}_{t}))(k_{t}+\bar{y}+\hat{y}_(N_{t},\bm{X}t)-c_{t})
 \end{equation}
 
 Equation (6) is the application of the consideration of a set of macroeconomic variables on the law of motion of real financial wealth $k_{t}$, where : 
 \begin{itemize}
     \item $\bar{r}$ is the steady state value of the real interest rate, that does not depend on time
-    \item $\hat{r}(\bm{X}t)$ is the value of the deviation from the steady state of the real interest rate, that depends on the state vector $\bm{X}{t}$ at time $t$
+    \item $\hat{r}(\bm{X}t)$ is the value of the deviation from the steady state of the real interest rate, that depends on the state vector $\bm{X}_{t}$ at time $t$
     \item $\bar{y}$ is the steady state value of the agent's real income, that does not depend on time
     \item $\hat{y}(N_{t},\bm{X}_{t})$ is the deviation from the steady state of the agent's real income, that depends on the number of hours worked at time $t$ and on the state vector at time $t$
     \item $c_{t}$ is the aggregate consumption level at time $t$ of the agent
@@ -115,7 +115,7 @@ Equation (6) is the application of the consideration of a set of macroeconomic v
 
 % equation 7%
 \begin{equation}
-    \bm{X}{t+1}=\bm{\Gamma}\bm{X}{t}+\bm{\epsilon}_{t+1}
+    \bm{X}_{t+1}=\bm{\Gamma}\bm{X}_{t}+\bm{\epsilon}_{t+1}
 \end{equation}
 
 Equation (7) describes the linear version of the equilibrium transition function, it is the linearization of the law of motion, where :
@@ -129,7 +129,7 @@ Equation (7) describes the linear version of the equilibrium transition function
 
 % equation 8%
 \begin{equation}
-    \bm{X}{t+1}=\bar{m}\cdot\bm{G}^{\bm{X}}(\bm{X}{t},\bm{\epsilon}_{t+1})
+    \bm{X}_{t+1}=\bar{m}\cdot\bm{G}^{\bm{X}}(\bm{X}_{t},\bm{\epsilon}_{t+1})
 \end{equation}
 
 Equation (8) describes the Cognitive Discounting of the State Vector, i.e. the perception by behavioural agents of the law of motion of the macroeconomic variables, where : 
@@ -141,7 +141,7 @@ Equation (8) describes the Cognitive Discounting of the State Vector, i.e. the p
 
 % equation 9%
 \begin{equation}
-    \bm{X}{t+1}=\bar{m}(\bm{\Gamma}\bm{X}{t}+\bm{\epsilon}_{t+1})
+    \bm{X}_{t+1}=\bar{m}(\bm{\Gamma}\bm{X}_{t}+\bm{\epsilon}_{t+1})
 \end{equation}
 
 Equation (9) is just the linearized version of the perception by behavioral agents of the law of motion of the state vector. 
@@ -149,36 +149,36 @@ Equation (9) is just the linearized version of the perception by behavioral agen
 \subsubsection*{Equation 10}
 
 \begin{equation}
-    \mathbb{E}{t}^{BR}\left[\bm{X}{t+k}\right]=\bar{m}^{k}\mathbb{E}{t}\left[\bm{X}{t+k}\right]
+    \mathbb{E}_{t}^{BR}\left[\bm{X}_{t+k}\right]=\bar{m}^{k}\mathbb{E}_{t}\left[\bm{X}_{t+k}\right]
 \end{equation}
 
 Equation (10) defines the expectation of behavioral agents in function of the rational perception of the law of motion of the state vector, where : 
 \begin{itemize}
     \item $k\geq 0$ a time period in discrete context
-    \item $\mathbb{E}{t}^{BR}\left[\bm{X}{t+k}\right]$ is the expected value of the state vector at time $t+k$ by behavioral agents (or subjective/behavioral expectation operator)
+    \item $\mathbb{E}_{t}^{BR}\left[\bm{X}_{t+k}\right]$ is the expected value of the state vector at time $t+k$ by behavioral agents (or subjective/behavioral expectation operator)
     \item $\bar{m}^{k}$ is the cognitive discounting effect at period $t+k$
-    \item $\mathbb{E}{t}\left[\bm{X}{t+k}\right]$ is the rational expectation of the state vector at time $t+k$
+    \item $\mathbb{E}_{t}\left[\bm{X}_{t+k}\right]$ is the rational expectation of the state vector at time $t+k$
 \end{itemize}
 
 \subsubsection*{Equation 11 (Lemma 1)}
 
 \begin{equation}
-    \mathbb{E}{t}^{BR}\left[z\left(\bm{X}{t+k}\right)\right]=\bar{m}^{k}\mathbb{E}{t}\left[z\left(\bm{X}{t+k}\right)\right]
+    \mathbb{E}_{t}^{BR}\left[z\left(\bm{X}_{t+k}\right)\right]=\bar{m}^{k}\mathbb{E}_{t}\left[z\left(\bm{X}_{t+k}\right)\right]
 \end{equation}
 
 Equation (11) defines in the general case the behavioral expectation operator, for any function of the state vector, where : 
 \begin{itemize}
     \item $k\geq 0$ a time period in discrete context
     \item $z(\cdot)$ is a function, such that $z(0)=0$
-    \item $\mathbb{E}{t}^{BR}\left[z\left(\bm{X}{t+k}\right)\right]$ is the expected value of the image of the state vector by the function $z(\cdot)$ at time $t+k$ by behavioural agents
+    \item $\mathbb{E}_{t}^{BR}\left[z\left(\bm{X}_{t+k}\right)\right]$ is the expected value of the image of the state vector by the function $z(\cdot)$ at time $t+k$ by behavioural agents
     \item $\bar{m}^{k}$ is the cognitive discounting effect at period $t+k$
-    \item $\mathbb{E}{t}\left[z\left(\bm{X}{t+k}\right)\right]$ is the rational expectation of the image of the state vector by the function $z(\cdot)$ at time $t+k$
+    \item $\mathbb{E}_{t}\left[z\left(\bm{X}_{t+k}\right)\right]$ is the rational expectation of the image of the state vector by the function $z(\cdot)$ at time $t+k$
 \end{itemize}
 
 \subsubsection*{Equation 12}
 
 \begin{equation}
-    \mathbb{E}{t}^{BR}\left[\bar{r}+\hat{r}\left(\bm{X}{t+k}\right)\right]=\bar{r}+\bar{m}^{k}\mathbb{E}{t}\left[\hat{r}(\bm{X}{t+k})\right]
+    \mathbb{E}_{t}^{BR}\left[\bar{r}+\hat{r}\left(\bm{X}_{t+k}\right)\right]=\bar{r}+\bar{m}^{k}\mathbb{E}_{t}\left[\hat{r}(\bm{X}_{t+k})\right]
 \end{equation}
 
 Equation (12) is an example of the Lemma 1 applied to the interest rate, where :
@@ -186,9 +186,9 @@ Equation (12) is an example of the Lemma 1 applied to the interest rate, where :
     \item $k\geq 0$ a time period in discrete context
     \item $\bar{r}$ the steady state level of the real interest rate, that does not depend on time,  
     \item $\hat{r}(\bm{X}_{t+k})$ is the equilibrium transition function defining the value of the deviation from the steady state of the real interest rate in the function of the state vector at time $t+k$
-    \item $\bar{r}+\hat{r}(\bm{X}{t})=r{t}(\bm{X}_{t})$ is the value of the real interest rate at time $t$
-    \item $\mathbb{E}{t}^{BR}\left[\bar{r}+\hat{r}(\bm{X}{t+k})\right]$ is the expected value of the real interest at time $t+k$ by behavioural agents
-    \item $\mathbb{E}{t}\left[\hat{r}(\bm{X}{t+k})\right]$ is the rational expectation of the value of the deviation of the real interest rate from the steady state at time $t+k$
+    \item $\bar{r}+\hat{r}(\bm{X}_{t})=r{t}(\bm{X}_{t})$ is the value of the real interest rate at time $t$
+    \item $\mathbb{E}_{t}^{BR}\left[\bar{r}+\hat{r}(\bm{X}_{t+k})\right]$ is the expected value of the real interest at time $t+k$ by behavioural agents
+    \item $\mathbb{E}_{t}\left[\hat{r}(\bm{X}_{t+k})\right]$ is the rational expectation of the value of the deviation of the real interest rate from the steady state at time $t+k$
 \end{itemize}
 
 \subsection{The Firm's problem}
@@ -231,13 +231,13 @@ Equation 15 describes the flow profit of the firm in function of the real log pr
     \item $\bm{X}{\tau}=(\bm{X}^{\mathcal{M}}{\tau}, \Pi_{\tau})$ is the extended macro state vector, with $\bm{X}^{\mathcal{M}{\tau}}$ the vector of macro variables, including $\zeta{\tau}$ and possible announcements about future policy
     \item $\Pi\left(\bm{X}{\tau}\right):=p{\tau}-p_{t}=\pi_{t+1}+...+\pi_{\tau}$ is the inflation between times $t$ and $\tau$
     \item $q_{it}-\Pi(\bm{X}{\tau})=q{i\tau}$ is the real price of the firm if they didn't change its price between $t$ and $\tau$
-    \item $\mu\left(\bm{X}_{\tau}\right)$ is the labor wedge in function of the extended state vector at time $t$
+    \item $\mu\left(\bm{X}_{\tau}\right)$ is the aggregate labor wedge in function of the extended state vector at time $t$
     \item $c(\bm{X}_{\tau})$ is the aggregate consumption level in function of the extended state vector at time $t$
 \end{itemize}
 
 \subsubsection*{Equation 16}
 \begin{equation}
-\max_{\text{q}{it}} \mathbb{E}{t} \sum_{\tau=t}^{\infty}(\beta\theta)^{\tau-t} \frac{c\left(\bm{X_{\tau}}\right)^{-\gamma}}{\left(\bm{X_{t}}\right)^{-\gamma}} \varv\left(q_{it},\bm{X}{\tau}\right)
+\max_{\text{q}{it}} \mathbb{E}_{t} \sum_{\tau=t}^{\infty}(\beta\theta)^{\tau-t} \frac{c\left(\bm{X_{\tau}}\right)^{-\gamma}}{\left(\bm{X_{t}}\right)^{-\gamma}} \varv\left(q_{it},\bm{X}{\tau}\right)
 \end{equation}
 
 Equation (16) describes the maximisation program of the firm given that they have a Calvo-like probability of $\theta$ of being able to change their price at each period, where : 
@@ -248,12 +248,12 @@ Equation (16) describes the maximisation program of the firm given that they hav
     \item $q_{it}$ is the real log price of the firm at time $t$
     \item $\beta$ is the discount factor
     \item $\theta$ is the Calvo like probability that the firm can change its price at any period
-    \item $\frac{c\left(\bm{X}{\tau}^{-\gamma}\right)}{c\left(\bm{X}{t}^{-\gamma}\right)}$ is the adjustment in the stochastic discount factor/pricing kernel between times $t$ and $\tau$ 
+    \item $\frac{c\left(\bm{X}{\tau}^{-\gamma}\right)}{c\left(\bm{X}_{t}^{-\gamma}\right)}$ is the adjustment in the stochastic discount factor/pricing kernel between times $t$ and $\tau$ 
 \end{itemize}
 
 \subsubsection*{Equation 17}
 \begin{equation}
-    \max_{q_{it}}{\mathbb{E}{t}^{BR} \left[\sum{\tau=t}^{\infty}(\beta\theta)^{\tau-t}\frac{c\left(\bm{X}{\tau}^{-\gamma}\right)}{c\left(\bm{X}{t}^{-\gamma}\right)} \varv\left(q_{it,\bm{X}_{\tau}}\right) \right]}
+    \max_{q_{it}}{\mathbb{E}_{t}^{BR} \left[\sum{\tau=t}^{\infty}(\beta\theta)^{\tau-t}\frac{c\left(\bm{X}{\tau}^{-\gamma}\right)}{c\left(\bm{X}_{t}^{-\gamma}\right)} \varv\left(q_{it,\bm{X}_{\tau}}\right) \right]}
 \end{equation}
 
 Equation 17 describes the maximisation program of the behavioral firm, i.e. such that it is maximisation the behavioral expectation operator of the flow profit, where : 
@@ -264,27 +264,27 @@ Equation 17 describes the maximisation program of the behavioral firm, i.e. such
     \item $q_{it}$ is the real log price of the firm at time $t$
     \item $\beta$ is the discount factor
     \item $\theta$ is the Calvo like probability that the firm can change its price at any period
-    \item $\frac{c\left(\bm{X}{\tau}^{-\gamma}\right)}{c\left(\bm{X}{t}^{-\gamma}\right)}$ is the adjustment in the stochastic discount factor between times $t$ and $\tau$ and it is approximately 1 when linearised around deterministic steady state. 
+    \item $\frac{c\left(\bm{X}{\tau}^{-\gamma}\right)}{c\left(\bm{X}_{t}^{-\gamma}\right)}$ is the adjustment in the stochastic discount factor between times $t$ and $\tau$ and it is approximately 1 when linearised around deterministic steady state. 
 \end{itemize}
 
 \subsection{Model solution}
 
 \subsubsection*{Equation 18}
 \begin{equation}
-    \hat{c}{t}=\mathbb{E}{t}\left[\hat{c}{t+1}-\frac{1}{\gamma R}\hat{r}{t}\right]
+    \hat{c}_{t}=\mathbb{E}_{t}\left[\hat{c}_{t+1}-\frac{1}{\gamma R}\hat{r}_{t}\right]
 \end{equation}
 
 Equation (18) is the linearized version of the Euler equation obtained from the presented model. It is also called the investment-savings (IS) curve, where : 
 \begin{itemize}
     \item $\hat{c}_{t}$ is the value of the deviation from the steady state of the aggregate consumption at time $t$
-    \item $\mathbb{E}{t}\left[\hat{c}{t+1}\right]$ is the rational expectation of the value of the deviation from the steady state of the aggregate consumption at time $t+1$
+    \item $\mathbb{E}_{t}\left[\hat{c}_{t+1}\right]$ is the rational expectation of the value of the deviation from the steady state of the aggregate consumption at time $t+1$
     \item $\gamma$ is the factor of the importance of consumption
     \item $R:=1+\bar{r}$ is defined from the real interest rate at the steady state (cf. page 7 of the article)
 \end{itemize}
 
 \subsubsection*{Equation 19}
 \begin{equation}
-    \hat{c}{t}=M\cdot\mathbb{E}{t}\left[\hat{c}{t+1}\right]-\sigma\hat{r}{t}
+    \hat{c}_{t}=M\cdot\mathbb{E}_{t}\left[\hat{c}_{t+1}\right]-\sigma\hat{r}_{t}
 \end{equation}
 
 Equation (19) is the application of Lemma 1 (equation (11)) on the previous Euler equation, i.e. a cognitively discounted aggregate Euler equation, where : 
@@ -295,7 +295,7 @@ Equation (19) is the application of Lemma 1 (equation (11)) on the previous Eule
 
 \subsubsection*{Equation 20}
 \begin{equation}
-    N^{\phi}{t}=\omega{t}c_{t}^{\gamma}
+    N^{\phi}_{t}=\omega_{t}c_{t}^{\gamma}
 \end{equation}
 
 Equation (20) the result of the static First Order Condition for labor supply, where : 
@@ -308,7 +308,7 @@ Equation (20) the result of the static First Order Condition for labor supply, w
 
 \subsubsection*{Equation 21}
 \begin{equation}
-    \hat{c}{t}^{n}=\frac{1+\phi}{\gamma+\phi}\zeta{t}
+    \hat{c}_{t}^{n}=\frac{1+\phi}{\gamma+\phi}\zeta{t}
 \end{equation}
 
 Equation (21) is the equation giving us the consumption in a natural economy where there are no frictions in prices i.e. flexible price economy. where :
@@ -323,7 +323,7 @@ We calculate this natural economy consumption the same way we calculated the fle
 
 \subsubsection*{Equation 22}
 \begin{equation}
-    \hat{c}^{n}{t} = M\cdot\mathbb{E}{t}\left[\hat{c}^{n}{t+1}\right]-\sigma\hat{r}^{n}{t}
+    \hat{c}^{n}_{t} = M\cdot\mathbb{E}_{t}\left[\hat{c}^{n}_{t+1}\right]-\sigma\hat{r}^{n}_{t}
 \end{equation}
 
 Equation (22) is the application of Lemma 1 (equation (11)) on the previous Euler equation, i.e. a cognitively discounted aggregate Euler equation for the natural economy where there are no price frictions. Here : 
@@ -335,7 +335,7 @@ Equation (22) is the application of Lemma 1 (equation (11)) on the previous Eule
 
 \subsubsection*{Equation 23}
 \begin{equation}
-    r^{n0}{t}=\bar{r}+\frac{1+\phi}{\sigma(\gamma+\phi)}\left(M\cdot\mathbb{E}{t}\left[\zeta_{t+1}\right]-\zeta_{t}\right)
+    r^{n0}_{t}=\bar{r}+\frac{1+\phi}{\sigma(\gamma+\phi)}\left(M\cdot\mathbb{E}_{t}\left[\zeta_{t+1}\right]-\zeta_{t}\right)
 \end{equation}
 Equation (23) is the equation for the pure natural rate of interest: this is the interest rate that prevails in an economy without pricing frictions, and undisturbed by government policy (in particular, budget deficits). In this equation : 
 \begin{itemize}
@@ -348,11 +348,11 @@ Equation (23) is the equation for the pure natural rate of interest: this is the
         respectively
 \end{itemize}
     
-This pure natural interest rate is calculated by isolating the $\hat r_{t}^{n}$ in Equation (22) and then replacing $\hat{c}{t}^{n}=\frac{1+\phi}{\gamma+\phi}\zeta{t}$ , $\hat{c}{t+1}^{n}=\frac{1+\phi}{\gamma+\phi}\zeta{t+1}$ and $\hat r_{t}^{n}=r_{t}^{n}-\bar{r}$ and by assuming $r_{t}^{n}=r^{n0}_{t}$ which holds when there are no budget deficits. 
+This pure natural interest rate is calculated by isolating the $\hat r_{t}^{n}$ in Equation (22) and then replacing $\hat{c}_{t}^{n}=\frac{1+\phi}{\gamma+\phi}\zeta{t}$ , $\hat{c}_{t+1}^{n}=\frac{1+\phi}{\gamma+\phi}\zeta{t+1}$ and $\hat r_{t}^{n}=r_{t}^{n}-\bar{r}$ and by assuming $r_{t}^{n}=r^{n0}_{t}$ which holds when there are no budget deficits. 
 
 \subsubsection*{Equation 24}
 \begin{equation}
-    x_{t}=M\cdot\mathbb{E}{t}\left[x{t+1}\right]-\sigma(\hat{r}{t}-\hat{r}^{n}{t})
+    x_{t}=M\cdot\mathbb{E}_{t}\left[x{t+1}\right]-\sigma(\hat{r}_{t}-\hat{r}^{n}_{t})
 \end{equation}
 
 Equation (24) is the equation for the behavioural discounted Euler equation where : 
@@ -365,49 +365,51 @@ Equation (24) is the equation for the behavioural discounted Euler equation wher
     \item $\hat r_{t}^{n}$ is the deviation of the real interest rate from the steady state for the natural economy.
 \end{itemize}
 
-This is calculated by subtracting the expression $\hat{c}{t}=M\cdot\mathbb{E}{t}\left[\hat{c}{t+1}\right]-\sigma\hat{r}{t}$ i.e. Equation (19) and $\hat{c}^{n}{t} = M\cdot\mathbb{E}{t}\left[\hat{c}^{n}{t+1}\right]-\sigma\hat{r}^{n}{t}$ i.e. Equation (22)
+This is calculated by subtracting the expression $\hat{c}_{t}=M\cdot\mathbb{E}_{t}\left[\hat{c}_{t+1}\right]-\sigma\hat{r}_{t}$ i.e. Equation (19) and $\hat{c}^{n}_{t} = M\cdot\mathbb{E}_{t}\left[\hat{c}^{n}_{t+1}\right]-\sigma\hat{r}^{n}_{t}$ i.e. Equation (22)
 
 \subsubsection*{Equation 25}
 \begin{equation}
-    x_{t}=M\cdot\mathbb{E}{t}\left[x{t+1}\right]-\sigma(i_{t}-\mathbb{E}{t}\left[\pi{t+1}\right]-r^{n}_{t})
+    x_{t}=M\cdot\mathbb{E}_{t}\left[x{t+1}\right]-\sigma(i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t})
 \end{equation}
 
-Equation (25) is the behavioural discounted Euler equation after replacing the equation for Fisher equation  where $\hat r_{t}= r_{t}- \bar r = (i_{t}-\mathbb{E}{t}\left[\pi{t+1}\right]-r^{n}_{t})$
+Equation (25) is the behavioural discounted Euler equation after replacing the equation for Fisher equation  where $\hat r_{t}= r_{t}- \bar r = (i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t})$
 \begin{itemize}
     \item $i_{t}$ is the nominal interest rate
-    \item $\mathbb{E}{t}\left[\pi{t+1}\right]$ is the expected inflation in the future
+    \item $\mathbb{E}_{t}\left[\pi_{t+1}\right]$ is the expected inflation in the future
     \item $M=\bar{m}$
     \item $\sigma=\frac{1}{\gamma R}$
 \end{itemize}
 
 \subsubsection*{Equation 26}
 \begin{equation}
-    x_{t}=-\sigma\sum_{k\geq 0}{M\cdot \mathbb{E}{t}\left[\hat{r}{t+k}-\hat{r}_{t+k}^{n}\right]}
+    x_{t}=-\sigma\sum_{k\geq 0}{M\cdot \mathbb{E}_{t}\left[\hat{r}_{t+k}-\hat{r}_{t+k}^{n}\right]}
 \end{equation}
 
 Equation (26) iteratively using Equation (24) reduces to this equation. It indicates that changes in the interest rate in the $1000^{th}$ period will have a discounted impact on the output gap. Therefore, the effect of changes in interest rates on the output gap diminishes over time, with changes in the $1000^{th}$ period having a smaller impact compared to changes in the $1^{st}$ period.
 
 
- \subsubsection*{Equation 27}
+\subsubsection*{Equation 27}
 \begin{equation}
-    p^{*}{t}=p{t}+(1-\beta\theta)\sum_{k=0}^{\infty}\left(\beta\theta\bar{m}\right)^{k}\cdot\mathbb{E}{t}\left[\pi{t+1}+...+\pi{t+k}-\mu_{t+k}\right]
+    p^{*}_{t}=p_{t}+(1-\beta\theta)\sum_{k=0}^{\infty}\left(\beta\theta\bar{m}\right)^{k}\cdot\mathbb{E}_{t}\left[\pi_{t+1}+...+\pi_{t+k}-\mu_{t+k}\right]
 \end{equation}
 
-Equation (27) ..., where : 
+Equation (27) is the optimal price for a behaviourial firm resetting its price
 \begin{itemize}
-    \item 
+    \item $p^{*}_{t}$ is the the price a behaviourial firm will reset its price to. 
+    \item $\bar{m}$ is the cognitive discounting factor. 
+    \item $p^{*}_{t}= q{it}+p_{t}$ where $q_{it}$ is the linearised version of the maximisation solution to problem 17. $q_{it}$ is the price for the firms that can adjust their prices and $p_{t}$ is the price of the firms that can't adjust their prices.
 \end{itemize}
 
 \subsubsection*{Equation 28 - Proposition 2, the first equation}
 \begin{equation}
-    x_{t}=M\cdot\mathbb{E}{t}\left[x{t+1}\right]-\sigma(i_{t}-\mathbb{E}{t}\left[\pi{t+1}\right]-r^{n}_{t})
+    x_{t}=M\cdot\mathbb{E}_{t}\left[x{t+1}\right]-\sigma(i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t})
 \end{equation}
 
 Equation (28) is the Behavioural IS Curve. Essentially we are representing the Euler equation in terms of the output gap and also using the Fisher Equation.
 
 \subsubsection*{Equation 29 - Proposition 2, second equation}
 \begin{equation}
-    \pi_{t}=\beta\cdot M^{f} \mathbb{E}t\left[\pi{t+1}\right]+\kappa\cdot x_{t}
+    \pi_{t}=\beta\cdot M^{f} \mathbb{E}t\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
 \end{equation}
 
 Equation (29) is the Behavioural Phillips curve where: 
@@ -427,6 +429,7 @@ Equation (29) is the Behavioural Phillips curve where:
 \end{equation}
 
 Equation (30) defines the parameters in Proposition 2.
+
 
 \section{Consequences of the Model}
 
@@ -449,7 +452,7 @@ This is a description
         & := (1+\bar{r}+\hat{r}^{BR}(\textbf{X}_t))(k_{t}+\bar{y}+\hat{y}^{BR}(N_{t},\textbf{X}_t)-c_{t})
     \end{split}
 \end{equation}
-Equation (49) translates the perception of the law of motion of the personal wealth $k$, where : 
+Equation (49) translates the perception of the law of motion of the personal wealth $k$. It is a rewriting of equation (6) with the addition of an attention discount factor to each of the perceived variables, where : 
 \begin{itemize}
     \item $k_{t+1}$ is the personal wealth at time $t+1$
     \item $\textbf{G}^{k,BR}$ is the transition function of personal wealth under bounded rationality, i.e. the perception of the transition function under bounded rationality
@@ -491,7 +494,7 @@ Note that both discount factors $m_{r}$ and $m_{y}$ apply to the period $t$, mea
 \begin{equation}\tag{51}
     \begin{cases}
         \mathbb{E}_{t}^{BR}\left[\hat{r}^{BR}(\textbf{X}_{t+k})\right]=m_{r}\bar{m}^{k}\mathbb{E}_{t}\left[\hat{r}(\textbf{X}_{t+k})\right] \\
-        \mathbb{E}_{t}^{BR}\left[\hat{y}^{BR}(\textbf{X}_{t+k})\right]=m_{r}\bar{m}^{k}\mathbb{E}_{t}\left[\hat{y}(\textbf{X}_{t+k})\right]
+        \mathbb{E}_{t}^{BR}\left[\hat{y}^{BR}(\textbf{X}_{t+k})\right]=m_{y}\bar{m}^{k}\mathbb{E}_{t}\left[\hat{y}(\textbf{X}_{t+k})\right]
     \end{cases}
 \end{equation}
 
@@ -505,9 +508,9 @@ Equation (51) is the application of Lemma 1 (equation (11)) on the perceived val
     \item $\bar{m}$ is the general discount factor applicable for all future variables
 \end{itemize}
 
-Equation (51) is the main consequence of the refinment previously done in equations (49) and (50) : not only are the agents generally myopic to the future, but they are also not fully attentive to present variables, depending on the variables.
-It can indeed seem plausible to say that they pay more attention to the income than to the interest rate, even when they have the information about the current period.
-This equation, coupled with the next one, argues that one is not fully rational even when they have acces to the infomraiont of their present income and personal Euler equation, because they have this present attention deficiency to income $m_{y}$.
+Equation (51) is the main consequence of the refinment previously done in equations (49) and (50) : not only are the agents generally myopic to the future, but they are also not fully attentive to present variables, and their attention level can vary depending on which one they consider.
+It can indeed seem plausible to say that they pay more attention to the income than to the interest rate, even when they have the information about the current period. In this case it would mean that $m_{r}<m{y}$. 
+This equation, coupled with the next one, argues that one is not fully rational even when they have acces to the information of their present income and personal Euler equation, because they have this present attention deficiency to income $m_{y}$.
 
 \subsubsection*{Equation 52}
 
@@ -515,17 +518,76 @@ This equation, coupled with the next one, argues that one is not fully rational 
         \hat{c}_{t}=\mathbb{E}_{t}\left[\sum_{\tau\geq t}\frac{\bar{m}^{\tau-t}}{R^{\tau-t}}\left(b_{r}m_{r}\hat{r}(\textbf{X}_{\tau})+m_{Y}\frac{\bar{r}}{R}\hat{y}(\textbf{X}_{\tau})\right)\right]
 \end{equation}
 
-Where : 
+This equation can be better understood with the precisions : 
+\begin{equation*}
+    \begin{cases}
+        c_{t}=c_{t}^{d}+\hat{c}_{t} \\ 
+        c^{d}_{t} = \bar{y} + b_{k}\cdot k_{t} \\
+        b_{k}:=\frac{\bar{r}}{R}\cdot\frac{\phi}{\phi+\gamma}
+    \end{cases}
+\end{equation*}
+$$\iff$$
+\begin{equation*}
+    \hat{c}_{t}=c_{t}-c_{t}^{d}=c_{t}-\bar{y} - \frac{\bar{r}}{R}\cdot\frac{\phi}{\phi+\gamma}\cdot k_{t}
+\end{equation*}
+To get to the final form of equation (52), we should then plug the expression of (49), and take into account equations (50) and (51).
+Globally, equation (52) is the solution for consumption in a model with a structured attention of consumer, that relates to equations (18)-(19) in the baseline model, where : 
 \begin{itemize}
     \item $\hat{c}_{t}$ is the value of the deviation from the steady state of consumption
-    \item $\tau$ ...
+    \item $\tau$ is a time period in the future
+    \item $b_{r}:=-\frac{1}{\gamma\cdot R^{2}}$ is the coefficient associated to the interest rate
+    \item $m_{Y}=\frac{\phi\cdot m_{y}+\gamma}{\phi+\gamma}$ is the coefficient associated to the income
 \end{itemize}
+
+Even though the equation is more complex than in the baseline model, we should retain that the solution of the consumer here is only affected by this variable specific discount dampening. 
+
+\subsubsection*{Equation 52.5 : Discounted Euler Equation, with Term Structure of Attention (Proposition 9)}
+
+Equation 52.5 is not directly defined in the article, but is described as a refinment of equation (24).
+
+\begin{equation*}\tag{52.5}
+    x_{t}=M\cdot\mathbb{E}_{t}\left[x_{t+1}\right]-\sigma(\hat{r}_{t}-\hat{r}^{n}_{t})
+\end{equation*}
+
+Where : 
+\begin{itemize}
+    \item $M=\frac{\bar{m}}{(R-r\cdot m_{Y})}\in\left[0,1\right]$ is the "macro", or global parameter of attention
+    \item $\sigma:=\frac{m_{r}}{\gamma\cdot R\cdot(R-r\cdot m_{Y})}\in\left[0,\frac{1}{\gamma\cdot R}\right]$ is the coefficient of the effect of the interest rate gap on the output gap
+\end{itemize}
+
+Basically, this equation is the result of the refinment of equation (24) with the given attention structure.
 
 \subsubsection*{Equation 53}
 
 \begin{equation}\tag{53}
     \frac{\Delta^{GE}}{\Delta^{\text{direct}}}=R^{\tau+1}
 \end{equation}
+
+To understand this equation, we have to add : 
+
+\begin{equation*}
+    \begin{cases}
+        \Delta^{\text{direct}}:=\frac{\partial \hat{c}_{0}}{\partial \hat{r}_{\tau}}\bigg\rvert_{(y_{t})_{t\geq0 \text{ held constant}}} = -\alpha\cdot \frac{1}{R^{\tau}} \\
+        \Delta^{GE}:=\frac{\partial \hat{c}_{0}}{\partial \hat{r}_{\tau}}=-\alpha R 
+    \end{cases}
+\end{equation*}
+
+Equation (53) describes the effect of a future variation of the interest rate on consumption on the present consumption of \textbf{of the rational agent}, where :
+
+\begin{itemize}
+    \item $\Delta^{\text{direct}}$ is the direct effect of the variation of interest rate on present consumption, with no retroaction effect on the income
+    \item $\Delta^{GE}$ is the indirect effect of the variation of interest rate on present consumption, with retroaction effect on the income
+\end{itemize}
+
+Equation (53) refers to the Keynesian coefficient multiplicator in the rational case. 
+Dividing the indirect impact by the direct impact allows to see the magnitude of the general impact of the variation of the interest rate. 
+
+\subsubsection*{Equation 54}
+
+\begin{equation}\tag{54}
+    \frac{\Delta^{GE}}{\Delta^{\text{direct}}}=\left(\frac{R}{R-rm_{Y}}\right)^{\tau+1}\in\left[1, R^{\tau+1}\right]
+\end{equation}
+
 To understand this equation, we have to add :
 
 \begin{equation*}
@@ -542,11 +604,10 @@ Where :
     \item $\Delta^{\text{GE}}$
 \end{itemize}
 
-\subsubsection*{Equation 54}
-
-\begin{equation}\tag{54}
-    \frac{\Delta^{GE}}{\Delta^{\text{direct}}}=\left(\frac{R}{R-rm_{Y}}\right)^{\tau+1}\in\left[1, R^{\tau+1}\right]
-\end{equation}
+Equation (54) is the same as equation (53), but withing the beahvioral framework, with a structured attention term. 
+We see that within this framework, with a attention dampening for future periods, the magnitude of the interest rate variation is lessened by the attention coefficients. 
+This explains why the Keynesian multiplication factor is not as strong as predicted in real life.
+Equation (53) only works if consumers believe that other consumers are fully rational, equation (54) does not impose this condition. 
 
 \subsection{Flattening of the Phillips Curve via Imperfect Firm Attention}
 
@@ -556,11 +617,26 @@ Where :
     \varv^{BR}(q_{it},(\textbf{X}_{\tau})):=\varv^{0}\left(q_{it}-m^{f}_{\pi}\Pi(\textbf{X}_{\tau}),m^{f}_{x}\mu(\textbf{X}_{\tau}),c(\textbf{X}_{\tau})\right)
 \end{equation}
 
+Equation (55) introduces specific attention deficiency for firms, where : 
+\begin{itemize}
+    \item $\varv^{0}(q_{i\tau},\mu_{\tau},c_{\tau}):=\left(e^{q_{i\tau}}-(1-\tau_{f})e^{-\mu_{\tau}}\right)e^{-\varepsilon q_{i\tau}}c_{\tau}$ is the current real profit of the firm, as in equation (14) of the baseline model
+    \item $m^{f}_{\pi}$ is the attention deficit to inflation 
+    \item $m^{f}_{x}$ is the attention deficit to marginal cost
+\end{itemize}
+
+This equation takes the main elements of equation (15), but introduces a variable specific attention deficiency factor for the firms. 
+It allows to have a new maximisation program, for firms with bounded rationality, described in the next equation.
+
 \subsubsection*{Equation 56}
 
 \begin{equation}\tag{56}
     \max_{q_{it}}{\mathbb{E}_{t}^{BR}\left[\sum_{\tau=t}^{\infty}\left(\beta\theta\right)^{\tau-t}\frac{c(\textbf{X}_{\tau})^{-\gamma}}{c(\textbf{X}_{\tau})^{-\gamma}}\varv^{BR}(q_{it},\textbf{X}_{\tau})\right]}
 \end{equation}
+
+Equation (56) describes the maximisation program of a firm under bounded rationality, it is the same as equation (16), where : 
+\begin{itemize}
+    \item $\varv^{BR}$ is the perception of the real profit at time $t$, described in equation (55)
+\end{itemize}
 
 \subsubsection*{Equation 57}
 
@@ -568,11 +644,40 @@ Where :
     p^{*}_{t}=p_{t}+(1-\beta\theta)\sum^{\infty}_{k=0} \left(\beta\theta\bar{m}\right)^{k}\mathbb{E}_{t}\left[m^{f}_{\pi}(\pi_{t+1}+...+\pi_{t+k})-m^{f}_{x}\mu_{t+k}\right]
 \end{equation}
 
+Equation (57) is the solution to the maximisation program described in equation (56), but with the introduced variable specific attention discount factors, $m^{f}_{\pi}$ and $m^{f}_{x}$.
+It is the equivalent of equation (27) in the baseline model. 
+
+\subsubsection*{Equation 57.5 - Proposition 10}
+
+Equation (57.5) is not directly mentioned in the article, but is described as a refined version of equation (29) with different parameters.
+
+\begin{equation}\tag{57.5}
+    \pi_{t}=\beta\cdot M^{f}\cdot\mathbb{E}t\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
+\end{equation}
+$$\iff$$
+\begin{equation}\tag{57.5}
+    \pi_{t}=\beta\cdot\bar{m}\left(\theta+m^{f}_{\pi}\cdot(1-\theta)\cdot\frac{1-\beta\cdot\theta}{1-\beta\cdot\theta\cdot\bar{m}}\right)\cdot\mathbb{E}t\left[\pi_{t+1}\right]+m_{x}^{f}\cdot\bar{\kappa}\cdot x_{t}
+\end{equation}
+
+The two differences are given by : 
+\begin{itemize}
+    \item $M^{f}=\bar{m}\left(\theta+m^{f}_{\pi}\cdot(1-\theta)\cdot\frac{1-\beta\cdot\theta}{1-\beta\cdot\theta\cdot\bar{m}}\right)\in\left[0,1\right]$ for the general attention factor of the firm
+    \item $\kappa=m_{x}^{f}\cdot\bar{\kappa}$, as detailed in the next equation
+\end{itemize}
+
 \subsubsection*{Equation 58}
 
 \begin{equation}\tag{58}
     \kappa = m^{f}_{x}\bar{\kappa}
 \end{equation}
+
+Equation (58) describes the attention by the firm under bounded rationality to current macroeconomic production, where : 
+\begin{itemize}
+    \item $m^{f}_{x}$ is the attention deficiency to the output gap
+    \item $\bar{\kappa}$ is the slope of the traditional Phillips curve, i.e. the effect coefficient of the output gap on inflation
+\end{itemize}
+
+Equation (58) depicts the fact that the firms attention deficiency to the output gap affects the way they perceive their potential profit.
 
 \subsection{Nonconstant Trend Inflation and Neo-Fisherian Paradoxes}
 
@@ -584,26 +689,45 @@ Where :
 
 Where : 
 \begin{itemize}
+    \item $\pi^{d}_{t}$ is the "default" inflation value, perceived by the firms
     \item $\bar{\pi}_{t}$ is the moving average of past inflation 
-    \item $\bar{\pi}_{t}^{CB}$ is the inflation guidance 
+    \item $\bar{\pi}_{t}^{CB}$ is the inflation guidance, i.e. the inflation target declared by the Central Bank
+    \item $\zeta\in\left[0,1\right]$ is a weight factor on past inflation, which is not the same as the Total Factor productivity defined in the baseline model
 \end{itemize}
+
+Equation (59) describes the fact that firms predict a default value of inflation that is given by a weighted average of what they observed in the past regarding the actual inflation and the central bank policy. 
 
 \subsubsection*{Equation 60}
 
 \begin{equation}\tag{60}
-    x_{t}=M\mathbb{E}_{t}\left[x_{t+1}\right]-\sigma\left(i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t}\right)
+    x_{t}=M\cdot\mathbb{E}_{t}\left[x_{t+1}\right]-\sigma\left(i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t}\right)
 \end{equation}
+
+Equation (60) is exactly the same as the IS curve from equation (28).
 
 \subsubsection*{Equation 61}
 
 \begin{equation}\tag{61}
-    \pi_{t}=\beta\cdot M^{f} \mathbb{E}_t\left[\hat{\pi}_{t+1}\right]+\kappa\cdot x_{t}
+    \hat{\pi}_{t}=\beta\cdot M^{f}\cdot\mathbb{E}_t\left[\hat{\pi}_{t+1}\right]+\kappa\cdot x_{t}
 \end{equation}
+
+Equation (61) is obtained by taking into account the nonzero trend inflation in the formulation of inflation. 
+This equation is thus the same as (29), but with inflation $\pi_{t}$ replace by $\hat{\pi}_{t}$ the deviation from the default value, where : 
+\begin{itemize}
+    \item $\pi_{t}=\pi^{d}_{t}+\hat{\pi}_{t}$, with $\pi^{d}_{t}$ the default inflation and $\hat{\pi}_{t}$ the deviation from the default value
+\end{itemize}
+
+Together, equations (60) and (61) constitute Proposition 11 of the paper, and describe the behavioral new keynesian model augmented by a nonzero trend inflation.
 
 \subsubsection*{Equation 62, Proposition 12}
 
 \begin{equation}\tag{62}
     \phi_{\pi}+\zeta \frac{(1-\beta M^{f})}{\kappa}\phi_{x}+\zeta\frac{(1-\beta M^{f})(1-M)}{\kappa \sigma}>1
 \end{equation}
+
+Equation (62) describes the Equilibrium Determinacy of the model with Behavioral Agents.
+It is the condition for the model to be determinate in this refined framework, i.e. the equivalent of equation (34) in the baseline model.
+All the terms have been defined previously. 
+
 
 \end{document}
