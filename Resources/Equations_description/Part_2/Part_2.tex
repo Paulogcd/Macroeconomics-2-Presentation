@@ -1,0 +1,213 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{hyperref}
+\usepackage{csquotes}
+
+\DeclareSymbolFont{matha}{OML}{txmi}{m}{it}% txfonts
+\DeclareMathSymbol{\varv}{\mathord}{matha}{118}
+
+\title{Macroeconomics 2 Presentation \\ Part 2 Equations}
+\author{Gugelmo Cavalheiro Dias Paulo \\ \and Mitash Nayanika \\ \and Wang Shang}
+\date{\today}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\begin{document}
+
+\maketitle
+
+
+\section{Consequences of the Model}
+
+\subsection{The Taylor Principle Reconsidered: Equilibria Are Determinate Even with a Fixed Interest Rate}
+
+\subsubsection*{Equation 31}
+\begin{equation}\tag{31}
+    i_{t}=\phi_{\pi} \pi_{t}+\phi_{x}x_{t}+j_{t}
+\end{equation}
+
+The equation (31) sets the nominal interest $i_{t}$ in a Taylor rule fashion. $j_{t}$ is just a constant.
+
+\subsubsection*{Equation 32}
+\begin{equation}\tag{32}
+\textbf{z}_{t}=\textbf{A}\mathbb{E}_{t}\left[z_{t+1}\right]+\textbf{b}a_{t}
+\end{equation}
+The system of Proposition 2 can be represented as equation (32), where:
+\begin{itemize}
+    \item $\textbf{z}_{t}:=(x_{t},\pi_{t})^{\prime}$
+    \item $\textbf{A}$: see equation (33)
+    \item $\textbf{b}=\frac{-\sigma}{1+\sigma(\phi_{x}+\kappa\phi_{\pi})}(1,\kappa)^{\prime}$
+    \item $a_{t}:=j_{t}-r_{t}^{n}$
+\end{itemize}
+
+\subsubsection*{Equation 33}
+\begin{equation}\tag{33}
+    \textbf{A}=\frac{1}{1+\sigma(\phi_{x}+\kappa\phi_{\pi})}\begin{pmatrix} M & \sigma(1-\beta^{f}\phi_{\pi}) \\ \kappa M & \beta^{f}(1+\sigma\phi_{x})+\kappa\sigma \end{pmatrix}
+\end{equation}
+where:
+\begin{itemize}
+    \item $\beta^{f}:=\beta M_{f}$
+\end{itemize}
+
+\subsubsection*{Equation 34 - Proposition 3}
+\textbf{Equilibrium Determinacy with Behavioral Agents}: There is a determinate equilibrium (i.e., all of $\textbf{A}$’s eigenvalues are less than 1 in modulus) if and only if
+\begin{equation}\tag{34}
+    \phi_{\pi}+\frac{(1-\beta M^{f})}{\kappa}\phi_{x}+\frac{(1-\beta M^{f})(1-M)}{\kappa\sigma}>1
+\end{equation}
+
+\subsubsection*{Equation 35}
+In particular, when monetary policy is passive (i.e., when $\phi_{\pi}=\phi_{x}=0$), we
+have a determinate equilibrium if and only if bounded rationality is strong enough, in the sense that:
+\begin{equation}\tag{35}
+    \frac{(1-\beta M^{f})(1-M)}{\kappa\sigma}>1
+\end{equation}
+This is \textbf{Strong enough bounded rationality condition}. Condition (35) does not hold in the traditional model, where M = 1. The condition
+means that agents are boundedly rational enough (i.e., M is sufficiently less than
+1) and the firm-level pricing or cognitive frictions are large enough.
+
+\subsubsection*{Equation 36}
+\textbf{Permanent Interest Rate Peg}. Take the (admittedly extreme) case of a permanent peg. Then, in the traditional model, there is always a continuum of bounded equilibria, technically, because the matrix A has a root greater than 1 (in
+modulus) when M = 1.In the behavioral model, we do get a definite non-explosive equilibrium:
+\begin{equation}\tag{36}
+    \textbf{z}_{t}=\mathbb{E}_{t}\left[\sum_{\tau \geq t}\textbf{A}^{\tau-t}\textbf{b}a_{\tau}\right]
+\end{equation}
+Cochrane (2018) made the point that we’d expect an economy such as Japan’s to be quite volatile, if the ZLB is expected to last forever: conceivably, the economy could jump from one equilibrium to the next at each period. This is a problem for the rational model, which is solved if agents are behavioral enough, so that (35) holds.
+
+\subsubsection*{Equation 37}
+\textbf{Long-Lasting Interest Rate Peg}. The economy is still very volatile (in the rational model) in the less extreme case of a peg lasting for a long but finite duration. We can get:
+\begin{equation} \tag{37}
+    \textbf{z}_{0}(T)=\left(\textbf{I}+\textbf{A}_{ZLB}+...+\textbf{A}_{ZLB}^{T-1}\right)\underline{\textbf{b}}+\textbf{A}_{ZLB}^{T}\mathbb{E}_{0}\left[\textbf{z}_{T}\right]
+\end{equation}
+where:
+\begin{itemize}
+    \item $\textbf{A}_{ZLB}$ is the value of matrix $\textbf{A}$ in equation (33) when $\phi_{\pi}=\phi_{x}=j=0$ in the Taylor rule.
+\end{itemize}
+The system (32) is, at the ZLB(t$\leq$T): $\textbf{z}_{t}=\mathbb{E}_{t}\textbf{A}_{ZLB}\textbf{z}_{t+1}+\underline{\textbf{b}}$ with $\underline{\textbf{b}}:=\left(1,\kappa\right)\sigma\underline{r}$ where $\underline{r}\leq 0$ is the real interest rate that prevails during the ZLB. Iterating forward, we can get equation (37).
+
+\subsection{The ZLB Is Less Costly with Behavioral Agents}
+
+\subsubsection*{Equation 38 - Propostion 4}
+Call $x_{0}\left(T\right)$ the output gap at time 0, given the ZLB will lasts for T periods. In the traditional rational case, we obtain an unboundedly intense recession as the length of the ZLB increases: $\lim\limits_{n\to\infty}x_{0}\left(T\right)=-\infty$.This also holds when myopia is mild, i.e., (35) fails. However, suppose cognitive myopia is strong enough, i.e., (35) holds. Then, we obtain a boundedly intense recession:
+\begin{equation}\tag{38}
+    \lim\limits_{T\to\infty}x_{0}\left(T\right)=\frac{\sigma\left(1-\beta M^{f}\right)}{\left(1-M\right)\left(1-\beta M^{f}\right)-\kappa\sigma}\underline{r}\textless 0
+\end{equation}
+Myopia has to be stronger when agents are highly sensitive to the interest rate (high $\sigma$ ) and price flexibility is high (high $\kappa$ ). High price flexibility makes the system very reactive, and a high myopia is useful to counterbalance that.
+
+\section{Implications for Monetary Policy}
+
+\subsection{Welfare with Behavioral Agents and the Central Bank’s Objective}
+
+\subsubsection*{Equation 39 - Lemma 3}
+The welfare loss from inflation and output gap is:
+\begin{equation}\tag{39}
+    W=-K\mathbb{E}_{0}\sum_{t=0}^{\infty}\frac{1}{2}\beta^{t}\left(\pi_{t}^{2}+\vartheta x_{t}^{2}\right)+W_{-}
+\end{equation}
+where:
+\begin{itemize}
+    \item $\vartheta=\frac{\overline{\kappa}}{\epsilon}$
+    \item $K=u_{c}c\left(\gamma+\phi\right)\left(\epsilon/\overline{\kappa}\right)$
+    \item $W_{-}$ is a constant (made explicit in
+equation (200) in the online Appendix).
+    \item $\overline{\kappa}$ is the Phillips curve coefficient with rational firms (derived in Proposition 2).
+    \item $\epsilon$ is the elasticity of demand.
+\end{itemize}
+
+\subsection{Optimal Policy with Complex Trade-Offs: Reaction to a Cost-Push Shock}
+
+\subsubsection*{Equation 40 \& 41 - Proposition 5}
+$\textbf{Optimal Policy with Commitment: Suboptimality of Price-Level Targeting}$: To fight a time-0 cost-push shock, the optimal commitment policy entails, at time $t \geq 0$ :
+\begin{equation}\tag{40}
+    \pi_{t}=\frac{-\vartheta}{\kappa}\left(x_{t}-M^{f}x_{t-1}\textbf{1}_{t\textgreater 0}\right)
+\end{equation}
+so that the (log) price level ( $p_{t}=\sum\limits_{\tau=0}^{t}\pi_{\tau}$, normalizing the initial log price level to $p_{-1}$=0) satisfies:
+\begin{equation}\tag{41}
+    p_{t}=\frac{-\vartheta}{\kappa}\left(x_{t}+\left(1-M^{f}\right)\sum_{\tau=0}^{t-1}x_{\tau}\right)
+\end{equation}
+With rational firms ($M^{f}=1$) , the optimal policy involves “price-level targeting”.
+it ensures that the price level mean-
+reverts to a fixed target ($p_{t}=(-\nu/\kappa)x_{t}\to0$ in the long run). However, with behavioral firms, the price level is higher (even in the long run) after a positive cost-push shock: the optimal policy does not seek to bring the price level back to baseline.
+
+\subsubsection*{Equation 42 - Propostion 6}
+$\textbf{Optimal Discretionary Policy}$: The optimal discretionary policy entails:
+\begin{equation}\tag{42}
+    \pi_{t}=\frac{-\vartheta}{\kappa}x_{t}
+\end{equation}
+so that on the equilibrium path: $i_{t}=K\nu_{t}+r_{t}^{n}$. where:
+\begin{itemize}
+    \item $K=\frac{\kappa\sigma^{-1}\left(1-M\rho_{\nu}\right)+\vartheta\rho_{\nu}}{\kappa^{2}+\vartheta\left(1-\beta M^{f}\rho_{\nu}\right)}$
+\end{itemize}
+For persistent shocks ($\rho_{\nu} \textgreater 0$), the optimal policy is less aggressive (K is
+lower) when firms are more behavioral.
+
+\section{Implications for Fiscal Policy}
+
+\subsection{Cognitive Discounting Generates a Failure of Ricardian Equivalence}
+
+\subsubsection*{Equation 43}
+The public debt evolves as:
+\begin{equation}\tag{43}
+    B_{t+1}=B_{t}+R d_{t}
+\end{equation}
+where:
+\begin{itemize}
+    \item $B_{t}$ is the real value of government debt in period t, before period- t taxes.
+    \item $d_{t}:=\mathcal{T}_{t}+(r/R)B_{t}$. $d_{t}$ is the budget deficit (after the payment of the interest rate on debt) in period t.
+    \item $\mathcal{T}_{t}$ is the lump-sum transfer given by the government to the agent (so that $-\mathcal{T}_{t}$ is a tax).
+\end{itemize}
+No-Ponzi condition is the usual one, $\lim\limits_{t\to\infty}\beta^{t}B_{t}=0$, which here takes the form $\lim\limits_{t\to\infty}\beta^{t}\left(\sum_{s=0}^{t-1}d_{s}\right)=0$. Hence, debt does not necessarily mean-revert, and can follow a random walk.
+
+\subsubsection*{Equation 44 \& 45 - Propostion 7}
+$\textbf{Discounted Euler Equation with Sensitivity to Budget Deficits}$: Because agents are not Ricardian, budget deficits temporarily increase economic activity.
+The IS curve (24) becomes
+\begin{equation}\tag{44}
+    x_{t}=M\mathbb{E}_{t}\left[x_{t+1}\right]+b_{d}d_{t}-\sigma\left(i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r_{t}^{n0}\right)
+\end{equation}
+where:
+\begin{itemize}
+    \item $r_{t}^{n0}$ is the "pure" natural rate with zero deficits (derived in (23)).
+    \item $d_{t}$ is the budget deficit.
+    \item $b_{d}=\frac{\phi rR(1-\overline(m)}{(\phi+\gamma)(R-\overline(m)}$ is the sensitivity to deficits. When agents are rational, $b_{d}=0$, but with behavioral agents, $b_{d}\textgreater0$.
+\end{itemize}
+In the sequel, we will write this equation by saying that the behavioral IS curve (25) holds, but with the following modified natural rate, which captures the stimulative action of deficits:
+\begin{equation}\tag{45}
+    r_{t}^{n}=r_{t}^{n0}+\frac{b_{d}}{\sigma}d_{t}
+\end{equation}
+Hence, bounded rationality gives both a discounted IS curve and an impact of fiscal policy: $b_{d} \textgreater 0$. Deficit-financed (lump-sum) tax cuts have a “stimulative” impact on the economy.
+
+\subsection{Consequences for Fiscal Policy}
+
+\subsubsection*{Equation 46 - Lemma 4}
+$\textbf{First Best}$: When there are shocks to the natural rate of interest, the first best is achieved if and only if at all dates:
+\begin{equation}\tag{46}
+    i_{t}=r_{t}^{n}\equiv r_{t}^{n0}+\frac{b_{d}}{\sigma}d_{t}
+\end{equation}
+where:
+\begin{itemize}
+    \item $r_{t}^{n0}$ is the “pure” natural rate of interest given in (23) and is independent of fiscal and monetary policy.
+\end{itemize}
+This condition pins down the optimal sum of monetary
+and fiscal policy (i.e., the value of $i_{t}-(b_{d}/\sigma)d_{t}$), but not their precise values, as the two policies are perfect substitutes.
+
+\subsubsection*{Equation 47}
+With behavioral agents, there is an easy first best policy:
+\begin{equation}\tag{47}
+    \text{First best at the ZLB: } i_{t}=0 \text{ and deficit: } d_{t}=\frac{-\sigma}{b_{d}r_{t}^{n0}}
+\end{equation}
+i.e., fiscal policy runs deficits to stimulate demand.
+
+\subsubsection*{Equation 48}
+Suppose that the government purchases at time 0 an amount $G_{0}$, financed by a deficit $d_{0}=G_{0}$, and the central bank does not change the nominal
+rate at time 0 (we keep future deficits at 0 for t > 0, so that debt is permanently higher). Then the fiscal multiplier is:
+\begin{equation}\tag{48}
+    \frac{d Y_{0}}{d G_{0}}=1+b_{d}
+\end{equation}
+reflecting the fact that government spending has a “direct” effect of increasing GDP one-for-one, and then an “indirect” effect of making people feel richer.
+
+\end{document}

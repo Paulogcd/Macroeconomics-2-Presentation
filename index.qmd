@@ -8,7 +8,7 @@ Hello, we are Nayanika, Paulo and Shang, and this is the website of our Macroeco
 Here are some useful resources : 
 
 - [The slides of our presentation](./Resources/Slides/Slides.pdf) ([Here the LaTeX code](./Resources/Slides/Slides.tex))
-- [An additional description of the equations of the paper](./Resources/Equations_description/Equations_description.pdf) ([Here the LaTeX code](./Resources/Equations_description/Equations_description.tex))
+- [An additional description of the equations of the paper](./Resources/Equations_description/Final/Equations_description.pdf) ([Here the LaTeX code](./Resources/Equations_description/Final/Equations_description.tex))
 
 - [The final version of the paper](https://www.aeaweb.org/articles?id=10.1257/aer.20162005)
 - [A presentation of a former version of the paper by Xavier Gabaix](https://www.youtube.com/watch?v=ZavsNf0JK3g)
