@@ -56,8 +56,8 @@ The equation (50) defines the perceived values under bounded rationality of the 
     \item $m_{r}\in\left[0,1\right]$ is the attention discount factor for the interest rate
     \item $\hat{r}_{t}(\textbf{X}_{t})$ is the objective value of the deviation of the interest rate from the steady state 
     
-    \item $\hat{y}^{BR}(N_{t},\textbf{X}_{t})$ is the perception of the deviation of the personal from the steady state under bounded rationality, which is function of the number of hours worked, and of the macroeconomics state vector at time $t$
-    \item $\hat{y}^{BR}(\textbf{X}_{t})=\hat{y}^{BR}(N(\textbf{X}_{t}),\textbf{X}_{t})=\hat{y}(\textbf{X}_{t})$ is the perceived deviation value of the aggregate income
+    \item $\hat{y}^{BR}(N_{t},\textbf{X}_{t})$ is the perception of the deviation of the personal income from the steady state under bounded rationality $t$
+    \item $\hat{y}^{BR}(\textbf{X}_{t})=\hat{y}^{BR}(N(\textbf{X}_{t}),\textbf{X}_{t})=m_{y}\cdot\hat{y}(\textbf{X}_{t})$ is the perceived deviation value of the aggregate income
     \item $m_{y}\in\left[0,1\right]$ is the attention discount factor for the personal income
     \item $\omega(\textbf{X}_{t})$ is the real wage
     \item $N(\textbf{X}_{t})$ is the aggregate labor supply
@@ -176,9 +176,9 @@ To understand this equation, we have to add :
     
 Where : 
 \begin{itemize}
-    \item $M= \frac{\bar{m}}{R-r\cdot m_{Y}}$ 
-    \item $\Delta^{\text{direct}}$
-    \item $\Delta^{\text{GE}}$
+    \item $M= \frac{\bar{m}}{R-r\cdot m_{Y}}$ is the attention discount factor
+    \item $\Delta^{\text{direct}}$ is the direct effect of a change of real interest rate
+    \item $\Delta^{\text{GE}}$ is the indirect effect of a change of real interest rate
 \end{itemize}
 
 Equation (54) is the same as equation (53), but withing the beahvioral framework, with a structured attention term. 
@@ -305,5 +305,7 @@ Together, equations (60) and (61) constitute Proposition 11 of the paper, and de
 Equation (62) describes the Equilibrium Determinacy of the model with Behavioral Agents.
 It is the condition for the model to be determinate in this refined framework, i.e. the equivalent of equation (34) in the baseline model.
 All the terms have been defined previously. 
+
+
 
 \end{document}

@@ -21,13 +21,13 @@ The first two equations are the same as (28) and (29) and will be explained late
 
 \subsubsection*{Equation 1}
 % equation 1%
-\begin{equation}
+\begin{equation}\tag{1}
     x_{t}=M\cdot\mathbb{E}_{t}\left[ x{t+1} -\sigma (i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t})\right]
 \end{equation}
 
 \subsubsection*{Equation 2}
 % equation 2%
-\begin{equation}
+\begin{equation}\tag{2}
     \pi_{t}=\beta\cdot M^{f} \mathbb{E}_{t}\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
 \end{equation}
 
@@ -35,11 +35,11 @@ The first two equations are the same as (28) and (29) and will be explained late
 
 \subsubsection*{Equation 3}
 % equation 3%
-\begin{equation}
+\begin{equation}\tag{3}
     U = \mathbb{E}_{t} \left[ \sum{t=0}^{\infty} \beta^{t}\left(\frac{c_{t}^{1-\gamma}-1}{1-\gamma} - \frac{N_{t}^{1+\phi}}{1+\phi}\right)\right]
 \end{equation}
 
-Equation (3) is just the flow utility of the Household, with : 
+Equation (3) is the flow utility of the Household, with : 
 \begin{itemize}
     \item $\beta$ the discount factor
     \item $c_{t}$ the consumption of the houshold at time $t$
@@ -52,7 +52,7 @@ Equation (3) is just the flow utility of the Household, with :
 
 \subsubsection*{Equation 4}
 % equation 4%
-\begin{equation}
+\begin{equation}\tag{4}
     k_{t+1}=(1+r_t)(k_{t}-c_{t}+y_{t})
 \end{equation}
 
@@ -67,7 +67,7 @@ Equation (4) is the law of motion of the real financial wealth of the household,
 \subsubsection*{Equation 5}
 
 % equation 5%
-\begin{equation}
+\begin{equation}\tag{5}
     \bm{X}_{t+1}=\bm{G}^{\bm{X}}\left(\bm{X}_{t},\bm{\epsilon}_{t+1}\right)
 \end{equation}
 
@@ -99,7 +99,7 @@ Equation (6) is the application of the consideration of a set of macroeconomic v
 \subsubsection*{Equation 7}
 
 % equation 7%
-\begin{equation}
+\begin{equation}\tag{7}
     \bm{X}_{t+1}=\bm{\Gamma}\bm{X}_{t}+\bm{\epsilon}_{t+1}
 \end{equation}
 
@@ -113,7 +113,7 @@ Equation (7) describes the linear version of the equilibrium transition function
 \subsubsection*{Equation 8 (Assumption 1)}
 
 % equation 8%
-\begin{equation}
+\begin{equation}\tag{8}
     \bm{X}_{t+1}=\bar{m}\cdot\bm{G}^{\bm{X}}(\bm{X}_{t},\bm{\epsilon}_{t+1})
 \end{equation}
 
@@ -125,15 +125,15 @@ Equation (8) describes the Cognitive Discounting of the State Vector, i.e. the p
 \subsubsection*{Equation 9}
 
 % equation 9%
-\begin{equation}
+\begin{equation}\tag{9}
     \bm{X}_{t+1}=\bar{m}(\bm{\Gamma}\bm{X}_{t}+\bm{\epsilon}_{t+1})
 \end{equation}
 
-Equation (9) is just the linearized version of the perception by behavioral agents of the law of motion of the state vector. 
+Equation (9) is the linearized version of the perception by behavioral agents of the law of motion of the state vector. 
 
 \subsubsection*{Equation 10}
 
-\begin{equation}
+\begin{equation}\tag{10}
     \mathbb{E}_{t}^{BR}\left[\bm{X}_{t+k}\right]=\bar{m}^{k}\mathbb{E}_{t}\left[\bm{X}_{t+k}\right]
 \end{equation}
 
@@ -147,7 +147,7 @@ Equation (10) defines the expectation of behavioral agents in function of the ra
 
 \subsubsection*{Equation 11 (Lemma 1)}
 
-\begin{equation}
+\begin{equation}\tag{11}
     \mathbb{E}_{t}^{BR}\left[z\left(\bm{X}_{t+k}\right)\right]=\bar{m}^{k}\cdot\mathbb{E}_{t}\left[z\left(\bm{X}_{t+k}\right)\right]
 \end{equation}
 
@@ -162,7 +162,7 @@ Equation (11) defines in the general case the behavioral expectation operator, f
 
 \subsubsection*{Equation 12}
 
-\begin{equation}
+\begin{equation}\tag{12}
     \mathbb{E}_{t}^{BR}\left[\bar{r}+\hat{r}\left(\bm{X}_{t+k}\right)\right]=\bar{r}+\bar{m}^{k}\mathbb{E}_{t}\left[\hat{r}(\bm{X}_{t+k})\right]
 \end{equation}
 
@@ -179,7 +179,7 @@ Equation (12) is an example of the Lemma 1 applied to the interest rate, where :
 \subsection{The Firm's problem}
 
 \subsubsection*{Equation 13}
-\begin{equation}
+\begin{equation}\tag{13}
     P_{t}=\left(\int_{0}^{1}P_{it}^{1-\varepsilon}\,di\right)^{\frac{1}{1-\varepsilon}}
 \end{equation}
 
@@ -191,7 +191,7 @@ Equation (13) describes the aggregate price level, where :
 \end{itemize}
 
 \subsubsection*{Equation 14}
-\begin{equation}
+\begin{equation}\tag{14}
     \varv^{0}(q_{i\tau},\mu_{\tau},c_{\tau}):=\left(e^{q_{i\tau}}-(1-\tau_{f})e^{-\mu_{\tau}}\right)e^{-\varepsilon q_{i\tau}}c_{\tau}
 \end{equation}
 
@@ -206,7 +206,7 @@ Equation (14) describes the profit of the firm before the lump sum tax of the go
 \end{itemize}
 
 \subsubsection*{Equation 15}
-\begin{equation}
+\begin{equation}\tag{15}
     \varv\left(q_{it},\bm{X}{\tau}\right):=\varv^{0}\left(q_{it}-\Pi(\bm{X}{\tau}),\mu(\bm{X}{\tau}),c(\bm{X}_{\tau})\right)
 \end{equation}
 
@@ -221,7 +221,7 @@ Equation 15 describes the flow profit of the firm in function of the real log pr
 \end{itemize}
 
 \subsubsection*{Equation 16}
-\begin{equation}
+\begin{equation}\tag{16}
     \max_{q_{it}} \mathbb{E}_{t}\left[\sum_{\tau=t}^{\infty}(\beta\theta)^{\tau-t} \frac{c\left(\bm{X_{\tau}}\right)^{-\gamma}}{\left(\bm{X_{t}}\right)^{-\gamma}} \varv\left(q_{it},\bm{X}{\tau}\right)\right]
 \end{equation}
 
@@ -237,7 +237,7 @@ Equation (16) describes the maximisation program of the firm given that they hav
 \end{itemize}
 
 \subsubsection*{Equation 17}
-\begin{equation}
+\begin{equation}\tag{17}
     \max_{q_{it}}{\mathbb{E}_{t}^{BR} \left[\sum{\tau=t}^{\infty}(\beta\theta)^{\tau-t}\frac{c\left(\bm{X}{\tau}^{-\gamma}\right)}{c\left(\bm{X}_{t}^{-\gamma}\right)} \varv\left(q_{it,\bm{X}_{\tau}}\right) \right]}
 \end{equation}
 
@@ -255,7 +255,7 @@ Equation 17 describes the maximisation program of the behavioral firm, i.e. such
 \subsection{Model solution}
 
 \subsubsection*{Equation 18}
-\begin{equation}
+\begin{equation}\tag{18}
     \hat{c}_{t}=\mathbb{E}_{t}\left[\hat{c}_{t+1}-\frac{1}{\gamma R}\hat{r}_{t}\right]
 \end{equation}
 
@@ -268,7 +268,7 @@ Equation (18) is the linearized version of the Euler equation obtained from the 
 \end{itemize}
 
 \subsubsection*{Equation 19}
-\begin{equation}
+\begin{equation}\tag{19}
     \hat{c}_{t}=M\cdot\mathbb{E}_{t}\left[\hat{c}_{t+1}\right]-\sigma\hat{r}_{t}
 \end{equation}
 
@@ -279,7 +279,7 @@ Equation (19) is the application of Lemma 1 (equation (11)) on the previous Eule
 \end{itemize}
 
 \subsubsection*{Equation 20}
-\begin{equation}
+\begin{equation}\tag{20}
     N^{\phi}_{t}=\omega_{t}c_{t}^{\gamma}
 \end{equation}
 
@@ -292,7 +292,7 @@ Equation (20) the result of the static First Order Condition for labor supply, w
 \end{itemize}
 
 \subsubsection*{Equation 21}
-\begin{equation}
+\begin{equation}\tag{21}
     \hat{c}_{t}^{n}=\frac{1+\phi}{\gamma+\phi}\zeta{t}
 \end{equation}
 
@@ -307,7 +307,7 @@ We calculate this natural economy consumption the same way we calculated the fle
 \end{itemize} is the flexible price/natural economy consumption
 
 \subsubsection*{Equation 22}
-\begin{equation}
+\begin{equation}\tag{22}
     \hat{c}^{n}_{t} = M\cdot\mathbb{E}_{t}\left[\hat{c}^{n}_{t+1}\right]-\sigma\hat{r}^{n}_{t}
 \end{equation}
 
@@ -319,7 +319,7 @@ Equation (22) is the application of Lemma 1 (equation (11)) on the previous Eule
 \end{itemize}
 
 \subsubsection*{Equation 23}
-\begin{equation}
+\begin{equation}\tag{23}
     r^{n0}_{t}=\bar{r}+\frac{1+\phi}{\sigma(\gamma+\phi)}\left(M\cdot\mathbb{E}_{t}\left[\zeta_{t+1}\right]-\zeta_{t}\right)
 \end{equation}
 Equation (23) is the equation for the pure natural rate of interest: this is the interest rate that prevails in an economy without pricing frictions, and undisturbed by government policy (in particular, budget deficits). In this equation : 
@@ -336,7 +336,7 @@ Equation (23) is the equation for the pure natural rate of interest: this is the
 This pure natural interest rate is calculated by isolating the $\hat r_{t}^{n}$ in Equation (22) and then replacing $\hat{c}_{t}^{n}=\frac{1+\phi}{\gamma+\phi}\zeta{t}$ , $\hat{c}_{t+1}^{n}=\frac{1+\phi}{\gamma+\phi}\zeta{t+1}$ and $\hat r_{t}^{n}=r_{t}^{n}-\bar{r}$ and by assuming $r_{t}^{n}=r^{n0}_{t}$ which holds when there are no budget deficits. 
 
 \subsubsection*{Equation 24}
-\begin{equation}
+\begin{equation}\tag{24}
     x_{t}=M\cdot\mathbb{E}_{t}\left[x{t+1}\right]-\sigma(\hat{r}_{t}-\hat{r}^{n}_{t})
 \end{equation}
 
@@ -353,7 +353,7 @@ Equation (24) is the equation for the behavioural discounted Euler equation wher
 This is calculated by subtracting the expression $\hat{c}_{t}=M\cdot\mathbb{E}_{t}\left[\hat{c}_{t+1}\right]-\sigma\hat{r}_{t}$ i.e. Equation (19) and $\hat{c}^{n}_{t} = M\cdot\mathbb{E}_{t}\left[\hat{c}^{n}_{t+1}\right]-\sigma\hat{r}^{n}_{t}$ i.e. Equation (22)
 
 \subsubsection*{Equation 25}
-\begin{equation}
+\begin{equation}\tag{25}
     x_{t}=M\cdot\mathbb{E}_{t}\left[x{t+1}\right]-\sigma(i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t})
 \end{equation}
 
@@ -366,7 +366,7 @@ Equation (25) is the behavioural discounted Euler equation after replacing the e
 \end{itemize}
 
 \subsubsection*{Equation 26}
-\begin{equation}
+\begin{equation}\tag{26}
     x_{t}=-\sigma\sum_{k\geq 0}{M\cdot \mathbb{E}_{t}\left[\hat{r}_{t+k}-\hat{r}_{t+k}^{n}\right]}
 \end{equation}
 
@@ -374,7 +374,7 @@ Equation (26) iteratively using Equation (24) reduces to this equation. It indic
 
 
 \subsubsection*{Equation 27}
-\begin{equation}
+\begin{equation}\tag{27}
     p^{*}_{t}=p_{t}+(1-\beta\theta)\sum_{k=0}^{\infty}\left(\beta\theta\bar{m}\right)^{k}\cdot\mathbb{E}_{t}\left[\pi_{t+1}+...+\pi_{t+k}-\mu_{t+k}\right]
 \end{equation}
 
@@ -386,14 +386,14 @@ Equation (27) is the optimal price for a behaviourial firm resetting its price
 \end{itemize}
 
 \subsubsection*{Equation 28 - Proposition 2, the first equation}
-\begin{equation}
+\begin{equation}\tag{28}
     x_{t}=M\cdot\mathbb{E}_{t}\left[x{t+1}\right]-\sigma(i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t})
 \end{equation}
 
 Equation (28) is the Behavioural IS Curve. Essentially we are representing the Euler equation in terms of the output gap and also using the Fisher Equation.
 
 \subsubsection*{Equation 29 - Proposition 2, second equation}
-\begin{equation}
+\begin{equation}\tag{29}
     \pi_{t}=\beta\cdot M^{f} \mathbb{E}_{t}\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
 \end{equation}
 
@@ -405,7 +405,7 @@ Equation (29) is the Behavioural Phillips curve where:
 \end{itemize}
 
 \subsubsection*{Equation 30}
-\begin{equation}
+\begin{equation}\tag{30}
     \begin{cases}
         M=\bar{m} \\
         \sigma=\frac{1}{\gamma R} \\

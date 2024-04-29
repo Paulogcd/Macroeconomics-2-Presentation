@@ -61,31 +61,6 @@
 
 \subsection{Household's Problem}
 
-\subsubsection{Objective function}
-\begin{frame}{\subsecname}
-    \begin{equation}
-        \label{3}
-        U = \mathbb{E}\left[\sum_{t=0}^{\infty}\beta^{t}u(c_t,N_t)\right]
-    \end{equation}
-    With
-    \begin{equation*}
-    u(c_t,N_t) = \frac{c^{1-\gamma}-1}{1-\gamma}-\frac{N^{1+\phi}}{1+\phi}
-    \end{equation*}
-    So we have the following objective function of the houshold : 
-    \begin{equation*}
-        U = \mathbb{E}\left[\sum_{t=0}^{\infty}\beta^{t}\left(\frac{c^{1-\gamma}-1}{1-\gamma}-\frac{N^{1+\phi}}{1+\phi}\right)\right]
-    \end{equation*}
-\end{frame}
-
-\subsubsection{Constraint}
-\begin{frame}{\subsecname}
-    \begin{equation}\label{4}
-        k_{t+1}=(1+r_t)(k_t-c_t+y_t)
-    \end{equation}
-\end{frame}
-
-\subsubsection{Rest...}
-
 \subsection{Firms}
 
 \subsection{Solution}
@@ -137,14 +112,15 @@
 
 \subsection{Term Structure of Consumer Attention}
 \begin{frame}{\subsecname}
-    It is plausible that consumers do not pay attention equally to all economic variables, even in the present. 
-    We could therefore introduce attention discount factors that are variable specific. 
-    Those attention discount factors would then yield perceived variables under Bounded Rationality : 
+    It is plausible that consumers \textbf{do not equally pay attention to all economic variables}, even in the present. 
+    We could therefore introduce attention discount factors that are variable specific, yielding \textbf{perceived variables} under Bounded Rationality : 
     \begin{itemize}
         \item $\hat{r}^{BR}$ the perceived interest rate under bounded rationality
         \item $\hat{y}^{BR}$ the perceived income under bounded rationality
     \end{itemize}
-    Prior to this, consumers perceived perfectly variables at the current period, now, they do not anymore.
+    Prior to this, consumers perceived perfectly variables at the current period, now, they do not anymore. \\
+    \hfill \linebreak
+    Directly affects the consumer maximisation program. 
 \end{frame}
     
 \begin{frame}{\subsecname}
@@ -162,9 +138,11 @@
             & := (1+\bar{r}+\hat{r}^{BR}(\textbf{X}_t))(k_{t}+\bar{y}+\hat{y}^{BR}(N_{t},\textbf{X}_t)-c_{t})
         \end{split}
     \end{equation}
+    \hfill \linebreak
+    What could be functional forms of $\hat{r}^{BR}$ and $\hat{y}^{BR}$ ?
 \end{frame}
 
-\begin{frame}
+\begin{frame}{\subsecname}
     The perceived values of interest rate and income are defined such that :
     \begin{equation}\tag{50}
         \begin{cases}
@@ -172,10 +150,12 @@
             \hat{y}^{BR}(N_{t},\textbf{X}_{t}) = m_{y}\cdot\hat{y}(\textbf{X}_{t})+\omega(\textbf{X}_{t})(N_{t}-N_{t}(\textbf{X}_{t}))
         \end{cases}
     \end{equation}
+    Equation (50) is a possible functional form. The main changes are the attention discount factor. \\
+    Now, what would be the expectation under behavioral expectation of those perceived values ?
 \end{frame}
 
-\begin{frame}
-    Now, consumers are already behavioral, i.e. they have a general attention discount factor, from Lemma 1 in equation (11) :
+\begin{frame}{\subsecname}
+    Consumers already have a general attention discount factor $\bar{m}$, from Lemma 1 in equation (11) :
     \begin{equation*}\tag{11}
         \mathbb{E}_{t}^{BR}\left[z\left(\bm{X}_{t+k}\right)\right]=\bar{m}^{k}\cdot\mathbb{E}_{t}\left[z\left(\bm{X}_{t+k}\right)\right]
     \end{equation*}
@@ -190,7 +170,7 @@
 
 \begin{frame}{\subsecname}
     What are consequences of this enriched attention structure term ? \\
-    When we solve for consumption\footnote{For more details on the derivation, check the equations decription file.}, we get \textbf{Proposition 8 (Behavioral Consumption Function)} :
+    When we solve for consumption, we get \textbf{Proposition 8} (Behavioral Consumption Function) :
     \begin{equation}\tag{52}
         \hat{c}_{t}=\mathbb{E}_{t}\left[\sum_{\tau\geq t}\frac{\bar{m}^{\tau-t}}{R^{\tau-t}}\left(b_{r}m_{r}\hat{r}(\textbf{X}_{\tau})+m_{Y}\frac{\bar{r}}{R}\hat{y}(\textbf{X}_{\tau})\right)\right]
     \end{equation}
@@ -268,7 +248,7 @@
 \begin{frame}{\subsecname}
     In a behavioral framework, the multiplicative effect is dampened by bounded rationality. \\
 
-    An attention discount factor that is variable specific allows to explain why the Keynesian multiplicator is not as strong as what theory predicts. \\ 
+    An attention discount factor that is variable specific allows to explain why forward guidance is not as strong as what theory predicts. \\ 
 
     What about variable specific attention deficiency for firms now ?
 \end{frame}
@@ -279,7 +259,7 @@
     \begin{equation}\tag{15}
         \varv\left(q_{it},\bm{X}{\tau}\right):=\varv^{0}\left(q_{it}-\Pi(\bm{X}{\tau}),\mu(\bm{X}{\tau}),c(\bm{X}_{\tau})\right)
     \end{equation}
-    turns into a perceived real profit of the firm :
+    Turns into a perceived real profit of the firm :
     \begin{equation}\tag{55}
         \varv^{BR}(q_{it},(\textbf{X}_{\tau})):=\varv^{0}\left(q_{it}-m^{f}_{\pi}\cdot\Pi(\textbf{X}_{\tau}),m^{f}_{x}\cdot\mu(\textbf{X}_{\tau}),c(\textbf{X}_{\tau})\right)
     \end{equation}
@@ -309,6 +289,10 @@
             & \sum^{\infty}_{k=0} \left(\beta\theta\bar{m}\right)^{k}\mathbb{E}_{t}\left[m^{f}_{\pi}(\pi_{t+1}+...+\pi_{t+k})-m^{f}_{x}\mu_{t+k}\right]
         \end{split}
     \end{equation}
+    In comparison, we had in the baseline model : 
+    \begin{equation*}\tag{27}
+        p^{*}_{t}=p_{t}+(1-\beta\theta)\sum_{k=0}^{\infty}\left(\beta\theta\bar{m}\right)^{k}\cdot\mathbb{E}_{t}\left[\pi_{t+1}+...+\pi_{t+k}-\mu_{t+k}\right]
+    \end{equation*}
 \end{frame}
 
 \begin{frame}{\subsecname}
@@ -333,8 +317,7 @@
     \begin{equation}\tag{29}
         \pi_{t}=\beta\cdot M^{f}\cdot\mathbb{E}t\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
     \end{equation}
-    turns into : 
-    \textbf{Proposition 10 (Phillips Curve with Behavioral Firms, Allowing for Imperfect Attention to Inflation and Costs)} : 
+    Turns into a Phillips Curve with Behavioral Firms, allowing for imperfect attention to inflation and costs (\textbf{Proposition 10}) :
     \begin{equation*}
         \pi_{t}=\beta\cdot\bar{m}\left(\theta+m^{f}_{\pi}\cdot(1-\theta)\cdot\frac{1-\beta\cdot\theta}{1-\beta\cdot\theta\cdot\bar{m}}\right)\cdot\mathbb{E}t\left[\pi_{t+1}\right]+m_{x}^{f}\cdot\bar{\kappa}\cdot x_{t}
     \end{equation*}
@@ -342,19 +325,46 @@
 
 \subsection{Nonconstant Trend Inflation and Neo- Fisherian Paradoxes}
 \begin{frame}{\subsecname}
+    Now, let's change the way we consider inflation. Instead of a steady state, agents perceive a default value.
+    The article proposes the following functional form :
     \begin{equation}\tag{59}
         \pi^{d}_{t}=(1-\zeta)\bar{\pi}_{t}+\zeta\bar{\pi}_{t}^{CB}
     \end{equation}
+    The IS curve is unchanged, and is the same as equation (28) :
     \begin{equation}\tag{60}
         x_{t}=M\mathbb{E}_{t}\left[x_{t+1}\right]-\sigma\left(i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t}\right)
     \end{equation}
-    \begin{equation}\tag{61}
-        \pi_{t}=\beta\cdot M^{f} \mathbb{E}_t\left[\hat{\pi}_{t+1}\right]+\kappa\cdot x_{t}
+\end{frame}
+
+\begin{frame}{\subsecname}
+    The Phillips curve of equation (29) :
+    \begin{equation}\tag{29}
+        \pi_{t}=\beta\cdot M^{f} \mathbb{E}_{t}\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
     \end{equation}
+    Turns into :
+    \begin{equation}\tag{61}
+        \hat{\pi}_{t}=\beta\cdot M^{f}\cdot\mathbb{E}_t\left[\hat{\pi}_{t+1}\right]+\kappa\cdot x_{t}
+    \end{equation}
+    The only difference is through $\hat{\pi}_{t}$.
+\end{frame}
+
+\begin{frame}{\subsecname}
+    Finally, the equilbrium condition changes through $\zeta$ the weight given to the Central Bank declaration. 
+    Equation (34) in the Baseline model :
+    \begin{equation}\tag{34}
+        \phi_{\pi}+\frac{(1-\beta M^{f})}{\kappa}\phi_{x}+\frac{(1-\beta M^{f})(1-M)}{\kappa\sigma}>1
+    \end{equation}
+    Turns into :
     \begin{equation}\tag{62}
         \phi_{\pi}+\zeta \frac{(1-\beta M^{f})}{\kappa}\phi_{x}+\zeta\frac{(1-\beta M^{f})(1-M)}{\kappa \sigma}>1
     \end{equation}
+    The term $\zeta$ can be considered as the weight of central bank guidance.
+    \begin{itemize}
+        \item What if it is 0 ?
+        \item What are the consequences for Central Bankers ?
+    \end{itemize}
 \end{frame}
+
 
 \section{Discussion of the Behavioral Assumptions}
 \begin{frame}
@@ -371,6 +381,7 @@
         \item Reasonable Variants
     \end{itemize}
 \end{frame}
+
 
 \section{Conclusion}
 \begin{frame}
