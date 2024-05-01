@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.24)  29 APR 2024 16:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.9.24)  1 MAY 2024 14:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -873,18 +873,22 @@ File: omltxmi.fd 2000/12/15 v3.1
 
 ] [7
 
-] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc)
-Overfull \vbox (9.00346pt too high) detected at line 56
+]
+Overfull \vbox (8.56438pt too high) detected at line 88
  []
 
 [8
 
-] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc) [9
+]
+Overfull \vbox (3.87447pt too high) detected at line 100
+ []
+
+[9
 
 ] [10
 
 ] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc)
-Overfull \vbox (9.00346pt too high) detected at line 76
+Overfull \vbox (9.00346pt too high) detected at line 106
  []
 
 [11
@@ -894,7 +898,7 @@ Overfull \vbox (9.00346pt too high) detected at line 76
 ] [13
 
 ] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc)
-Overfull \vbox (9.00346pt too high) detected at line 86
+Overfull \vbox (9.00346pt too high) detected at line 126
  []
 
 [14
@@ -904,7 +908,7 @@ Overfull \vbox (9.00346pt too high) detected at line 86
 ] [16
 
 ] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc)
-Overfull \vbox (9.00346pt too high) detected at line 96
+Overfull \vbox (9.00346pt too high) detected at line 136
  []
 
 [17
@@ -914,7 +918,7 @@ Overfull \vbox (9.00346pt too high) detected at line 96
 ] [19
 
 ] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc)
-Overfull \vbox (9.00346pt too high) detected at line 107
+Overfull \vbox (9.00346pt too high) detected at line 146
  []
 
 [20
@@ -923,9 +927,13 @@ Overfull \vbox (9.00346pt too high) detected at line 107
 
 ] [22
 
-] [23
+] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc)
+Overfull \vbox (9.00346pt too high) detected at line 157
+ []
 
-] [24
+[23
+
+] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc) [24
 
 ] [25
 
@@ -957,33 +965,45 @@ Overfull \vbox (9.00346pt too high) detected at line 107
 
 ] [39
 
-] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc)
-Overfull \vbox (9.00346pt too high) detected at line 373
- []
-
-[40
+] [40
 
 ] [41
 
 ] [42
 
-] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc)
-Overfull \vbox (9.00346pt too high) detected at line 390
- []
+] [43
 
-[43
-
-] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc) [44
+] [44
 
 ] [45
 
 ] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc)
-Overfull \vbox (9.00346pt too high) detected at line 400
+Overfull \vbox (9.00346pt too high) detected at line 469
  []
 
 [46
 
-] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc) [47
+] [47
+
+] [48
+
+] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc)
+Overfull \vbox (9.00346pt too high) detected at line 486
+ []
+
+[49
+
+] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc) [50
+
+] [51
+
+] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc)
+Overfull \vbox (9.00346pt too high) detected at line 496
+ []
+
+[52
+
+] (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.toc) [53
 
 ]
 \tf@nav=\write6
@@ -997,21 +1017,23 @@ Overfull \vbox (9.00346pt too high) detected at line 400
 
  (/Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.aux)
 Package rerunfilecheck Info: File `Slides.out' has not changed.
-(rerunfilecheck)             Checksum: 604099015C354E95B3D9B08682845BB1;3638.
+(rerunfilecheck)             Checksum: C861455A8BF22EEA600D7F67CF56DA04;3954.
  ) 
 Here is how much of TeX's memory you used:
- 24923 strings out of 478994
- 485274 string characters out of 5858184
- 768111 words of memory out of 5000000
- 41711 multiletter control sequences out of 15000+600000
+ 24958 strings out of 478994
+ 485641 string characters out of 5858184
+ 768726 words of memory out of 5000000
+ 41731 multiletter control sequences out of 15000+600000
  419100 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  131i,19n,132p,1889b,744s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{https://www.jstor.org/stable/1914185} has been referenced but does not exist, replaced by a fixed one
+
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.pdf (47 pages, 227443 bytes).
+Output written on /Users/pgcd/Documents/Sciences_Po/Master/S2/3_Macro_2/Presentation/Resources/Slides/Slides.pdf (53 pages, 236148 bytes).
 PDF statistics:
- 552 PDF objects out of 1000 (max. 8388607)
- 474 compressed objects within 5 object streams
- 114 named destinations out of 1000 (max. 500000)
- 195 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 599 PDF objects out of 1000 (max. 8388607)
+ 514 compressed objects within 6 object streams
+ 129 named destinations out of 1000 (max. 500000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 

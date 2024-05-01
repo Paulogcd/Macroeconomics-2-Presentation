@@ -34,19 +34,69 @@
     \tableofcontents[hideallsubsections]
 \end{frame}
 
-\section{Contextualization}
+\section{Introduction}
 \begin{frame}
     \tableofcontents[currentsection, hideothersubsections, sections=\value{section}]
 \end{frame}
 
 \subsection{Goal of the paper}
 \begin{frame}{\subsecname}
-    Content of the Goal of the paper.
+    This paper aims to introduce behavioral economics in the New Keynesian model. \\
+    \begin{itemize}
+        \item \underline{Behavioral Economics} : \\ Since \hyperlink{https://www.jstor.org/stable/1914185}{Kahneman et Tversky (1979)}, aims to introduce deviation to the expected utility theory and the perfect rationality assumption.
+        \item \underline{New-Keynesian framework} : \\ General Equilibrium with frictions, what we saw in throughout this class.
+    \end{itemize}
+    How to integrate coginitive limitations in the New Keynesian model ?
+\end{frame}
+
+\subsection{Method of the paper}
+\begin{frame}{\subsecname}
+\begin{itemize}
+    \item Baseline model
+    \item Direct conclusions
+    \item Consequences on policy
+    \item Refinment of the baseline model
+    \item Consequences of refinment
+\end{itemize}
+\end{frame}
+
+\subsection{Conclusions of the paper}
+\begin{frame}{\subsecname}
+    In a behavioral model :
+    \begin{itemize}
+        \item Forward guidance is less powerful
+        \item The Taylor rule is changed
+        \item The equilibrium determinacy is easier to reach
+        \item The Zero Lower Bound (ZLB) consequences are changed
+        \item The optimal policy are different
+        \item Fiscal policies are more powerful
+        \item Theoretical contradictions are solved, such as the Neo-Fisherian paradoxes
+    \end{itemize}
 \end{frame}
 
 \subsection{Literature of the topic}
-\begin{frame}
-    Content of the the Literature.
+\begin{frame}{\subsecname}
+    Literature on the topic : \\
+    \underline{General New Keynesian Framework} : Woodford 2003b and Galí 2015 \\
+    \begin{itemize}
+        \item \underline{Strength of Forward guidance} : Del Negro, Giannoni, and Patterson (2015) and McKay, Nakamura, and Steinsson (2016)
+        \item \underline{Taylor Principle and Equilibrium determinacy} : Blanchard and Kahn (1980)
+        \item \underline{ZLB and Equilibrium determinacy} : Cochrane (2018) on the case of Japan
+        \item \underline{Policy optimality} : Clarida, Galí, and Gertler (1999), and rationality of firms
+        \item \underline{Neo-Fisherian paradoxes} : Cochrane (2018) on the inconsistency of the New-Keynesian model
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{\subsecname}
+    \underline{Behavioral economics} : How to incorporate cognitive limits in Macroeconomic models ?
+    \begin{itemize}
+        \item Limited information updating : Gabaix and Laibson (2002), Mankiw and Reis (2002)
+        \item Related differential salience : Bordalo et al. (2018)
+        \item Noisy signals Ma\`ckowiak and Wiederholt (2015), Caplin, Dean, and Leahy (2017)
+        \item Microfoundation : Gabaix (2014)
+        \item Woodford (2013) for a literature review on the topic.
+    \end{itemize}
+    There is a lot of literature on how to model behavioral agents (check pages 5 and 6 of the articles), but the goal of the present article lies elsewhere : Exhaustivity in the model and analysis of implications on policy.
 \end{frame}
 
 \section{Baseline model of the paper}
@@ -315,15 +365,15 @@
 \begin{frame}{\subsecname}
     If we solve the Phillips curve, the equation (29) : 
     \begin{equation}\tag{29}
-        \pi_{t}=\beta\cdot M^{f}\cdot\mathbb{E}t\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
+        \pi_{t}=\beta\cdot M^{f}\cdot\mathbb{E}_{t}\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
     \end{equation}
     Turns into a Phillips Curve with Behavioral Firms, allowing for imperfect attention to inflation and costs (\textbf{Proposition 10}) :
     \begin{equation*}
-        \pi_{t}=\beta\cdot\bar{m}\left(\theta+m^{f}_{\pi}\cdot(1-\theta)\cdot\frac{1-\beta\cdot\theta}{1-\beta\cdot\theta\cdot\bar{m}}\right)\cdot\mathbb{E}t\left[\pi_{t+1}\right]+m_{x}^{f}\cdot\bar{\kappa}\cdot x_{t}
+        \pi_{t}=\beta\cdot\bar{m}\left(\theta+m^{f}_{\pi}\cdot(1-\theta)\cdot\frac{1-\beta\cdot\theta}{1-\beta\cdot\theta\cdot\bar{m}}\right)\cdot\mathbb{E}_{t}\left[\pi_{t+1}\right]+m_{x}^{f}\cdot\bar{\kappa}\cdot x_{t}
     \end{equation*}
 \end{frame}
 
-\subsection{Nonconstant Trend Inflation and Neo- Fisherian Paradoxes}
+\subsection{Nonconstant Trend Inflation and Neo-Fisherian Paradoxes}
 \begin{frame}{\subsecname}
     Now, let's change the way we consider inflation. Instead of a steady state, agents perceive a default value.
     The article proposes the following functional form :
@@ -345,7 +395,7 @@
     \begin{equation}\tag{61}
         \hat{\pi}_{t}=\beta\cdot M^{f}\cdot\mathbb{E}_t\left[\hat{\pi}_{t+1}\right]+\kappa\cdot x_{t}
     \end{equation}
-    The only difference is through $\hat{\pi}_{t}$.
+    The only difference is through $\hat{\pi}_{t}$, with ${\pi}_{t}=\pi^{d}_{t}+\hat{\pi}_{t}$.
 \end{frame}
 
 \begin{frame}{\subsecname}
@@ -365,6 +415,52 @@
     \end{itemize}
 \end{frame}
 
+\begin{frame}{\subsecname}
+    \textbf{\underline{Neo-fisherian neutrality}} : In the long-run, inflation (money) should not affect output. \\
+    In the New-Keynesian framework, it does not work : if inflation is permanently higher, then output is permanent higher.
+    Let $M^{f}=1$, then :
+    \begin{equation}\tag{29}
+        \pi_{t}=\beta\cdot M^{f}\cdot\mathbb{E}_{t}\left[\pi_{t+1}\right]+\kappa\cdot x_{t}
+    \end{equation}
+    Turns in the steady state into :
+    \begin{equation*}
+        \pi=\beta\cdot\pi+\kappa\cdot x
+    \end{equation*}
+    $$\iff$$
+    \begin{equation*}
+        \pi\cdot\frac{1-\beta}{\kappa}= x
+    \end{equation*}
+\end{frame}
+
+\begin{frame}{\subsecname}
+    In the current extension, it is not the case : \\
+    Trend in inflation :
+    \begin{equation*}
+        {\pi}_{t}=\pi^{d}_{t}+\hat{\pi}_{t}
+    \end{equation*}
+    Perception of the trend :
+    \begin{equation}\tag{59}
+        \pi^{d}_{t}=(1-\zeta)\cdot\bar{\pi}_{t}+\zeta\cdot\bar{\pi}_{t}^{CB}
+    \end{equation}
+    Phillips curve :
+    \begin{equation}\tag{61}
+        \hat{\pi}_{t}=\beta\cdot M^{f}\cdot\mathbb{E}_t\left[\hat{\pi}_{t+1}\right]+\kappa\cdot x_{t}
+    \end{equation}
+    IS curve :
+    \begin{equation}\tag{60}
+        x_{t}=M\cdot\mathbb{E}_{t}\left[x_{t+1}\right]-\sigma\left(i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t}\right)
+    \end{equation}
+    We find $\implies i=r^{n}+\bar{\pi}$ and no impact of long run inflation over output.
+\end{frame}
+
+\begin{frame}
+    Conclusion of those enrichments :
+    \begin{itemize}
+        \item Variable specific attention deficiency allows for more detail in the specification.
+        \item Allows to highlight even more the conclusions of the general model
+        \item Answer both empirical problems and pure theoretical questions
+    \end{itemize}
+\end{frame}
 
 \section{Discussion of the Behavioral Assumptions}
 \begin{frame}
