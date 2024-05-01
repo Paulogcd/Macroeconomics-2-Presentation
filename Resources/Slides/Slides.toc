@@ -10,12 +10,20 @@
 \beamer@subsectionintoc {2}{4}{Synthesis Of A Behavioral New Keynesian Model}{13}{0}{2}
 \beamer@subsectionintoc {2}{5}{Calibration}{13}{0}{2}
 \beamer@sectionintoc {3}{Consequences}{13}{0}{3}
-\beamer@sectionintoc {4}{Implications for monetary policy}{16}{0}{4}
-\beamer@sectionintoc {5}{Implications for fiscal policy}{19}{0}{5}
-\beamer@sectionintoc {6}{Behavioral Enrichments of the Model}{22}{0}{6}
-\beamer@subsectionintoc {6}{1}{Term Structure of Consumer Attention}{25}{0}{6}
-\beamer@subsectionintoc {6}{2}{Flattening of the Phillips Curve via Imperfect Firm Attention}{34}{0}{6}
-\beamer@subsectionintoc {6}{3}{Nonconstant Trend Inflation and Neo-Fisherian Paradoxes}{39}{0}{6}
-\beamer@sectionintoc {7}{Discussion of the Behavioral Assumptions}{45}{0}{7}
-\beamer@sectionintoc {8}{Conclusion}{48}{0}{8}
-\beamer@sectionintoc {9}{Limits and Critics}{51}{0}{9}
+\beamer@subsectionintoc {3}{1}{The Taylor Principle Reconsidered}{16}{0}{3}
+\beamer@subsectionintoc {3}{2}{ZLB Is Less Costly with Behavioral Agents}{19}{0}{3}
+\beamer@subsectionintoc {3}{3}{Forward Guidance Is Much Less Powerful}{21}{0}{3}
+\beamer@sectionintoc {4}{Implications for monetary policy}{22}{0}{4}
+\beamer@subsectionintoc {4}{1}{Welfare with Behavioral Agents and the Central Bank’s Objective}{25}{0}{4}
+\beamer@subsectionintoc {4}{2}{Optimal Policy with No ZLB Constraints}{26}{0}{4}
+\beamer@subsectionintoc {4}{3}{Optimal Policy with Complex Trade-Offs}{27}{0}{4}
+\beamer@sectionintoc {5}{Implications for fiscal policy}{32}{0}{5}
+\beamer@subsectionintoc {5}{1}{Failure of Ricardian Equivalence}{35}{0}{5}
+\beamer@subsectionintoc {5}{2}{Consequences for Fiscal Policy}{38}{0}{5}
+\beamer@sectionintoc {6}{Behavioral Enrichments of the Model}{41}{0}{6}
+\beamer@subsectionintoc {6}{1}{Term Structure of Consumer Attention}{44}{0}{6}
+\beamer@subsectionintoc {6}{2}{Flattening of the Phillips Curve via Imperfect Firm Attention}{53}{0}{6}
+\beamer@subsectionintoc {6}{3}{Nonconstant Trend Inflation and Neo-Fisherian Paradoxes}{58}{0}{6}
+\beamer@sectionintoc {7}{Discussion of the Behavioral Assumptions}{64}{0}{7}
+\beamer@sectionintoc {8}{Conclusion}{67}{0}{8}
+\beamer@sectionintoc {9}{Limits and Critics}{70}{0}{9}
