@@ -22,7 +22,7 @@ The first two equations are the same as (28) and (29) and will be explained late
 \subsubsection*{Equation 1}
 % equation 1%
 \begin{equation}\tag{1}
-    x_{t}=M\cdot\mathbb{E}_{t}\left[ x{t+1} -\sigma (i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t})\right]
+    x_{t}=M\cdot\mathbb{E}_{t}\left[ x_{t+1} -\sigma (i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t})\right]
 \end{equation}
 
 \subsubsection*{Equation 2}
@@ -171,7 +171,7 @@ Equation (12) is an example of the Lemma 1 applied to the interest rate, where :
     \item $k\geq 0$ a time period in discrete context
     \item $\bar{r}$ the steady state level of the real interest rate, that does not depend on time,  
     \item $\hat{r}(\bm{X}_{t+k})$ is the equilibrium transition function defining the value of the deviation from the steady state of the real interest rate in the function of the state vector at time $t+k$
-    \item $\bar{r}+\hat{r}(\bm{X}_{t})=r{t}(\bm{X}_{t})$ is the value of the real interest rate at time $t$
+    \item $\bar{r}+\hat{r}(\bm{X}_{t})=r_{t}(\bm{X}_{t})$ is the value of the real interest rate at time $t$
     \item $\mathbb{E}_{t}^{BR}\left[\bar{r}+\hat{r}(\bm{X}_{t+k})\right]$ is the expected value of the real interest at time $t+k$ by behavioural agents
     \item $\mathbb{E}_{t}\left[\hat{r}(\bm{X}_{t+k})\right]$ is the rational expectation of the value of the deviation of the real interest rate from the steady state at time $t+k$
 \end{itemize}
@@ -337,7 +337,7 @@ This pure natural interest rate is calculated by isolating the $\hat r_{t}^{n}$ 
 
 \subsubsection*{Equation 24}
 \begin{equation}\tag{24}
-    x_{t}=M\cdot\mathbb{E}_{t}\left[x{t+1}\right]-\sigma(\hat{r}_{t}-\hat{r}^{n}_{t})
+    x_{t}=M\cdot\mathbb{E}_{t}\left[x_{t+1}\right]-\sigma(\hat{r}_{t}-\hat{r}^{n}_{t})
 \end{equation}
 
 Equation (24) is the equation for the behavioural discounted Euler equation where : 
@@ -354,7 +354,7 @@ This is calculated by subtracting the expression $\hat{c}_{t}=M\cdot\mathbb{E}_{
 
 \subsubsection*{Equation 25}
 \begin{equation}\tag{25}
-    x_{t}=M\cdot\mathbb{E}_{t}\left[x{t+1}\right]-\sigma(i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t})
+    x_{t}=M\cdot\mathbb{E}_{t}\left[x_{t+1}\right]-\sigma(i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t})
 \end{equation}
 
 Equation (25) is the behavioural discounted Euler equation after replacing the equation for Fisher equation  where $\hat r_{t}= r_{t}- \bar r = (i_{t}-\mathbb{E}_{t}\left[\pi_{t+1}\right]-r^{n}_{t})$
