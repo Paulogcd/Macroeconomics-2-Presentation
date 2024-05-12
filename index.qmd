@@ -13,3 +13,5 @@ Here are some useful resources :
 - [The final version of the paper](https://www.aeaweb.org/articles?id=10.1257/aer.20162005)
 - [A video presentation of a former version of the paper by Xavier Gabaix](https://www.youtube.com/watch?v=ZavsNf0JK3g)
 - [The online appendix of the paper](https://www.aeaweb.org/content/file?id=12652)
+
+We got 18 over 20 for this presentation. 
